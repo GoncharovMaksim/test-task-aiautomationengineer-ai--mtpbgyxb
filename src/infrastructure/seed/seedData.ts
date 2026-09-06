@@ -18,11 +18,34 @@ export interface SeedGameData {
   userReviews: RawReview[];
 }
 
+export const COVER_IMAGE_MAP: Record<string, string> = {
+  "astro-bot": "/covers/astro-bot.jpg",
+  "black-myth-wukong": "/covers/black-myth-wukong.jpg",
+  "metaphor-refantazio": "/covers/metaphor-refantazio.png",
+  "final-fantasy-vii-rebirth": "/covers/final-fantasy-vii-rebirth.png",
+  "hades-2": "/covers/hades-2.jpeg",
+  "balatro": "/covers/balatro.jpg",
+  "animal-well": "/covers/animal-well.jpg",
+  "tekken-8": "/covers/tekken-8.jpg",
+  "silent-hill-2": "/covers/silent-hill-2.jpg",
+  "helldivers-2": "/covers/helldivers-2.webp",
+  "like-a-dragon-infinite-wealth": "/covers/like-a-dragon-infinite-wealth.jpg",
+  "dragons-dogma-2": "/covers/dragons-dogma-2.jpg",
+  "shin-megami-tensei-v-vengeance": "/covers/shin-megami-tensei-v-vengeance.png",
+  "warhammer-40000-space-marine-2": "/covers/warhammer-40000-space-marine-2.jpg",
+  "prince-of-persia-the-lost-crown": "/covers/prince-of-persia-the-lost-crown.jpg",
+  "the-legend-of-zelda-echoes-of-wisdom": "/covers/the-legend-of-zelda-echoes-of-wisdom.jpg",
+  "frostpunk-2": "/covers/frostpunk-2.jpg",
+  "neva": "/covers/neva.jpg",
+  "stalker-2-heart-of-chornobyl": "/covers/stalker-2-heart-of-chornobyl.jpg",
+  "indiana-jones-and-the-great-circle": "/covers/indiana-jones-and-the-great-circle.jpg",
+};
+
 export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Astro Bot",
     slug: "astro-bot",
-    coverImage: "https://www.metacritic.com/a/img/resize/f0be10be6ffc1f03f3fb4c87cb7884ec88722a27/catalog/provider/2/3/2-1065113-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/astro-bot.jpg",
     platforms: [{ platform: "PS5", metascore: 94, userscore: 9.3 }],
     primaryPlatform: "PS5",
     metascore: 94,
@@ -46,7 +69,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Black Myth: Wukong",
     slug: "black-myth-wukong",
-    coverImage: "https://www.metacritic.com/a/img/resize/b97ff64205874251cbbe9c18f8e71b2d7112005e/catalog/provider/2/3/2-1002345-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/black-myth-wukong.jpg",
     platforms: [
       { platform: "PC", metascore: 81, userscore: 8.4 },
       { platform: "PS5", metascore: 82, userscore: 8.1 }
@@ -72,7 +95,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Metaphor: ReFantazio",
     slug: "metaphor-refantazio",
-    coverImage: "https://www.metacritic.com/a/img/resize/920ba011f0624d6faefebf1a3ebc453caeb91bf1/catalog/provider/2/3/2-1078921-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/metaphor-refantazio.png",
     platforms: [
       { platform: "PS5", metascore: 94, userscore: 9.1 },
       { platform: "PC", metascore: 92, userscore: 8.9 },
@@ -97,7 +120,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Final Fantasy VII Rebirth",
     slug: "final-fantasy-vii-rebirth",
-    coverImage: "https://www.metacritic.com/a/img/resize/8ba4efadceb3b248a39e87900b904cf7b8a82d02/catalog/provider/2/3/2-1052132-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/final-fantasy-vii-rebirth.png",
     platforms: [{ platform: "PS5", metascore: 92, userscore: 9.0 }],
     primaryPlatform: "PS5",
     metascore: 92,
@@ -118,7 +141,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Hades II",
     slug: "hades-2",
-    coverImage: "https://www.metacritic.com/a/img/resize/93ff868c22dc9b3da27ff017f8b9e69c10816cf6/catalog/provider/2/3/2-1061244-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/hades-2.jpeg",
     platforms: [{ platform: "PC", metascore: 91, userscore: 9.1 }],
     primaryPlatform: "PC",
     metascore: 91,
@@ -139,7 +162,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Balatro",
     slug: "balatro",
-    coverImage: "https://www.metacritic.com/a/img/resize/81e57c6b4458fef56f2f9c3eb7d949b28b76c8c4/catalog/provider/2/3/2-1058221-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/balatro.jpg",
     platforms: [
       { platform: "PC", metascore: 90, userscore: 8.6 },
       { platform: "Nintendo Switch", metascore: 90, userscore: 8.8 },
@@ -164,7 +187,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Animal Well",
     slug: "animal-well",
-    coverImage: "https://www.metacritic.com/a/img/resize/f24d772ecf9909241b12b5ea912f718aa66bb0c8/catalog/provider/2/3/2-1060931-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/animal-well.jpg",
     platforms: [
       { platform: "PC", metascore: 91, userscore: 8.3 },
       { platform: "PS5", metascore: 90, userscore: 8.5 },
@@ -189,7 +212,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Tekken 8",
     slug: "tekken-8",
-    coverImage: "https://www.metacritic.com/a/img/resize/75db9be09000a6f81a700508a8ff717b01d3688b/catalog/provider/2/3/2-1051992-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/tekken-8.jpg",
     platforms: [
       { platform: "PS5", metascore: 90, userscore: 7.7 },
       { platform: "PC", metascore: 90, userscore: 7.5 },
@@ -214,7 +237,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Silent Hill 2 Remake",
     slug: "silent-hill-2",
-    coverImage: "https://www.metacritic.com/a/img/resize/9852f6b3cfdcba6554e2091c5e9f8f2b7a95058c/catalog/provider/2/3/2-1077732-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/silent-hill-2.jpg",
     platforms: [
       { platform: "PS5", metascore: 86, userscore: 9.3 },
       { platform: "PC", metascore: 86, userscore: 9.1 }
@@ -238,7 +261,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Helldivers 2",
     slug: "helldivers-2",
-    coverImage: "https://www.metacritic.com/a/img/resize/97ebc1f09bbda45c10ad8ca50e30396013a77fcb/catalog/provider/2/3/2-1052844-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/helldivers-2.webp",
     platforms: [
       { platform: "PC", metascore: 82, userscore: 8.2 },
       { platform: "PS5", metascore: 82, userscore: 8.0 }
@@ -262,7 +285,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Like a Dragon: Infinite Wealth",
     slug: "like-a-dragon-infinite-wealth",
-    coverImage: "https://www.metacritic.com/a/img/resize/920ba011f0624d6faefebf1a3ebc453caeb91bf1/catalog/provider/2/3/2-1051511-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/like-a-dragon-infinite-wealth.jpg",
     platforms: [
       { platform: "PS5", metascore: 89, userscore: 8.5 },
       { platform: "PC", metascore: 89, userscore: 8.7 },
@@ -287,7 +310,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Dragon's Dogma 2",
     slug: "dragons-dogma-2",
-    coverImage: "https://www.metacritic.com/a/img/resize/f0be10be6ffc1f03f3fb4c87cb7884ec88722a27/catalog/provider/2/3/2-1051877-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/dragons-dogma-2.jpg",
     platforms: [
       { platform: "PS5", metascore: 86, userscore: 6.8 },
       { platform: "PC", metascore: 88, userscore: 6.5 },
@@ -312,7 +335,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Shin Megami Tensei V: Vengeance",
     slug: "shin-megami-tensei-v-vengeance",
-    coverImage: "https://www.metacritic.com/a/img/resize/81e57c6b4458fef56f2f9c3eb7d949b28b76c8c4/catalog/provider/2/3/2-1064319-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/shin-megami-tensei-v-vengeance.png",
     platforms: [
       { platform: "Nintendo Switch", metascore: 87, userscore: 8.8 },
       { platform: "PS5", metascore: 90, userscore: 8.9 },
@@ -337,7 +360,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Warhammer 40,000: Space Marine 2",
     slug: "warhammer-40000-space-marine-2",
-    coverImage: "https://www.metacritic.com/a/img/resize/9852f6b3cfdcba6554e2091c5e9f8f2b7a95058c/catalog/provider/2/3/2-1056581-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/warhammer-40000-space-marine-2.jpg",
     platforms: [
       { platform: "PC", metascore: 82, userscore: 8.0 },
       { platform: "PS5", metascore: 82, userscore: 8.1 },
@@ -362,7 +385,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Prince of Persia: The Lost Crown",
     slug: "prince-of-persia-the-lost-crown",
-    coverImage: "https://www.metacritic.com/a/img/resize/93ff868c22dc9b3da27ff017f8b9e69c10816cf6/catalog/provider/2/3/2-1052678-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/prince-of-persia-the-lost-crown.jpg",
     platforms: [
       { platform: "Nintendo Switch", metascore: 86, userscore: 8.5 },
       { platform: "PS5", metascore: 86, userscore: 8.6 },
@@ -387,7 +410,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "The Legend of Zelda: Echoes of Wisdom",
     slug: "the-legend-of-zelda-echoes-of-wisdom",
-    coverImage: "https://www.metacritic.com/a/img/resize/f24d772ecf9909241b12b5ea912f718aa66bb0c8/catalog/provider/2/3/2-1070543-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/the-legend-of-zelda-echoes-of-wisdom.jpg",
     platforms: [{ platform: "Nintendo Switch", metascore: 86, userscore: 8.2 }],
     primaryPlatform: "Nintendo Switch",
     metascore: 86,
@@ -408,7 +431,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Frostpunk 2",
     slug: "frostpunk-2",
-    coverImage: "https://www.metacritic.com/a/img/resize/b97ff64205874251cbbe9c18f8e71b2d7112005e/catalog/provider/2/3/2-1053421-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/frostpunk-2.jpg",
     platforms: [{ platform: "PC", metascore: 85, userscore: 7.2 }],
     primaryPlatform: "PC",
     metascore: 85,
@@ -429,7 +452,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Neva",
     slug: "neva",
-    coverImage: "https://www.metacritic.com/a/img/resize/81e57c6b4458fef56f2f9c3eb7d949b28b76c8c4/catalog/provider/2/3/2-1076541-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/neva.jpg",
     platforms: [
       { platform: "PC", metascore: 86, userscore: 8.9 },
       { platform: "PS5", metascore: 87, userscore: 9.0 },
@@ -454,7 +477,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "STALKER 2: Heart of Chornobyl",
     slug: "stalker-2-heart-of-chornobyl",
-    coverImage: "https://www.metacritic.com/a/img/resize/75db9be09000a6f81a700508a8ff717b01d3688b/catalog/provider/2/3/2-1049912-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/stalker-2-heart-of-chornobyl.jpg",
     platforms: [
       { platform: "PC", metascore: 74, userscore: 7.9 },
       { platform: "Xbox Series X", metascore: 74, userscore: 7.8 }
@@ -478,7 +501,7 @@ export const SEED_GAMES: SeedGameData[] = [
   {
     title: "Indiana Jones and the Great Circle",
     slug: "indiana-jones-and-the-great-circle",
-    coverImage: "https://www.metacritic.com/a/img/resize/8ba4efadceb3b248a39e87900b904cf7b8a82d02/catalog/provider/2/3/2-1067210-53.jpg?auto=webp&fit=cover&height=300&width=200",
+    coverImage: "/covers/indiana-jones-and-the-great-circle.jpg",
     platforms: [
       { platform: "Xbox Series X", metascore: 86, userscore: 8.4 },
       { platform: "PC", metascore: 87, userscore: 8.5 }

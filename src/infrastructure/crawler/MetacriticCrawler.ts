@@ -1,6 +1,6 @@
 import * as cheerio from "cheerio";
 import { PlatformScore, RawReview } from "../../domain/entities/Game";
-import { SEED_GAMES, SeedGameData } from "../seed/seedData";
+import { SEED_GAMES, SeedGameData, COVER_IMAGE_MAP } from "../seed/seedData";
 
 export interface DiscoveredGameSummary {
   title: string;
@@ -108,13 +108,13 @@ export class MetacriticCrawler {
         $(elem).text().trim().split("\n")[0].trim() ||
         slug.replace(/-/g, " ");
 
-      const cover = $(elem).find("img").attr("src") || "";
+      const cover = COVER_IMAGE_MAP[slug] || $(elem).find("img").attr("src") || "/covers/astro-bot.jpg";
 
       results.push({
         title,
         slug,
         url: `${this.baseUrl}${href}`,
-        coverImage: cover || "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80",
+        coverImage: cover,
         primaryPlatform: "Multiplatform",
         metascore: 85,
         userscore: 8.2,
@@ -136,6 +136,7 @@ export class MetacriticCrawler {
     genres: string[];
     criticReviews: RawReview[];
     userReviews: RawReview[];
+    coverImage?: string;
   }> {
     // If seed game exists, use high quality verified reviews & metadata
     const seed = SEED_GAMES.find((g) => g.slug === gameSummary.slug || g.title.toLowerCase() === gameSummary.title.toLowerCase());
@@ -148,6 +149,7 @@ export class MetacriticCrawler {
         genres: seed.genres,
         criticReviews: seed.criticReviews,
         userReviews: seed.userReviews,
+        coverImage: seed.coverImage,
       };
     }
 

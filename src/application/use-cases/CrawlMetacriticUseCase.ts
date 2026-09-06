@@ -136,7 +136,7 @@ export class CrawlMetacriticUseCase {
           title: summary.title,
           slug: summary.slug,
           url: summary.url,
-          coverImage: summary.coverImage,
+          coverImage: fullDetails.coverImage || summary.coverImage,
           platforms: fullDetails.platforms,
           primaryPlatform: fullDetails.platforms[0]?.platform || "PC",
           metascore: fullDetails.platforms[0]?.metascore ?? summary.metascore,

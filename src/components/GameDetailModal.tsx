@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Game } from "../domain/entities/Game";
+import { COVER_IMAGE_MAP } from "../infrastructure/seed/seedData";
 import { ScoreBadge } from "./ScoreBadge";
 import { PlatformTag } from "./PlatformTag";
 import {
@@ -73,12 +74,17 @@ export const GameDetailModal: React.FC<GameDetailModalProps> = ({
             <div className="md:col-span-1 space-y-3">
               <div className="aspect-[3/4] rounded-xl overflow-hidden bg-zinc-950 border border-zinc-800">
                 <img
-                  src={game.coverImage}
+                  src={COVER_IMAGE_MAP[game.slug] || game.coverImage}
                   alt={game.title}
                   className="w-full h-full object-cover"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src =
-                      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80";
+                    const target = e.target as HTMLImageElement;
+                    const fallbackMapped = COVER_IMAGE_MAP[game.slug];
+                    if (fallbackMapped && !target.src.includes(fallbackMapped)) {
+                      target.src = fallbackMapped;
+                    } else {
+                      target.src = "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80";
+                    }
                   }}
                 />
               </div>
@@ -396,12 +402,17 @@ export const GameDetailModal: React.FC<GameDetailModalProps> = ({
                   >
                     <div className="aspect-[16/9] rounded-lg overflow-hidden bg-black mb-2">
                       <img
-                        src={sim.coverImage}
+                        src={COVER_IMAGE_MAP[sim.slug] || sim.coverImage}
                         alt={sim.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
                         onError={(e) => {
-                          (e.target as HTMLImageElement).src =
-                            "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=300&q=80";
+                          const target = e.target as HTMLImageElement;
+                          const fallbackMapped = COVER_IMAGE_MAP[sim.slug];
+                          if (fallbackMapped && !target.src.includes(fallbackMapped)) {
+                            target.src = fallbackMapped;
+                          } else {
+                            target.src = "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=300&q=80";
+                          }
                         }}
                       />
                     </div>

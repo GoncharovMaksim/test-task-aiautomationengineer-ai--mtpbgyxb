@@ -1,5 +1,6 @@
 import React from "react";
 import { Game } from "../domain/entities/Game";
+import { COVER_IMAGE_MAP } from "../infrastructure/seed/seedData";
 import { ScoreBadge } from "./ScoreBadge";
 import { PlatformTag } from "./PlatformTag";
 import { Video, Bot, PlayCircle } from "lucide-react";
@@ -10,6 +11,8 @@ interface GameCardProps {
 }
 
 export const GameCard: React.FC<GameCardProps> = ({ game, onClick }) => {
+  const coverSrc = COVER_IMAGE_MAP[game.slug] || game.coverImage;
+
   return (
     <div
       onClick={onClick}
@@ -19,13 +22,18 @@ export const GameCard: React.FC<GameCardProps> = ({ game, onClick }) => {
         {/* Cover Image */}
         <div className="relative aspect-[16/9] w-full bg-zinc-950 overflow-hidden border-b border-zinc-800/80">
           <img
-            src={game.coverImage}
+            src={coverSrc}
             alt={game.title}
             loading="lazy"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90 group-hover:opacity-100"
             onError={(e) => {
-              (e.target as HTMLImageElement).src =
-                "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80";
+              const target = e.target as HTMLImageElement;
+              const fallbackMapped = COVER_IMAGE_MAP[game.slug];
+              if (fallbackMapped && !target.src.includes(fallbackMapped)) {
+                target.src = fallbackMapped;
+              } else {
+                target.src = "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80";
+              }
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80" />
