@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  metacritic-ai-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: metacritic-ai-pipeline
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - GROQ_API_KEY=${GROQ_API_KEY:-}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+    volumes:
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/api/crawler/status"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

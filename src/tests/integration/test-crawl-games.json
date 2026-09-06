@@ -1,0 +1,1692 @@
+{
+  "games": [
+    {
+      "id": "game-1",
+      "title": "Astro Bot",
+      "slug": "astro-bot",
+      "url": "https://www.metacritic.com/game/astro-bot/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/f0be10be6ffc1f03f3fb4c87cb7884ec88722a27/catalog/provider/2/3/2-1065113-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PS5",
+          "metascore": 94,
+          "userscore": 9.3
+        }
+      ],
+      "primaryPlatform": "PS5",
+      "metascore": 94,
+      "userscore": 9.3,
+      "developer": "Team ASOBI",
+      "publisher": "Team ASOBI",
+      "releaseDate": "Sep 6, 2024",
+      "description": "Join ASTRO on a supersized space adventure! The PS5 mothership has been wrecked, leaving ASTRO and the bot crew scattered across galaxies.",
+      "videoUrl": "https://www.youtube.com/watch?v=k5lO_2rZ_E0",
+      "genres": [
+        "Platformer",
+        "3D",
+        "Action"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Astro Bot is a joyous masterpiece of 3D platforming that celebrates PlayStation history with relentless creativity and immaculate DualSense haptics",
+          "Team ASOBI has crafted one of the finest pure platformers in modern memory, bursting with personality and clever level designs",
+          "Incredible attention to detail, tactile charm, and effortless joy in every single stage"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Astro Bot a predominantly favorable reception (average score: 97/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 3,
+        "updatedAt": "2026-09-06T04:40:27.065Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Pure fun from start to finish! Reminds me why I fell in love with video games in the first place"
+        ],
+        "disliked": [
+          "Pure fun from start to finish! Reminds me why I fell in love with video games in the first place",
+          "The use of controller vibration and triggers is the best on PS5 yet"
+        ],
+        "consensus": "Players give Astro Bot a divided reception (average score: 10/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 2,
+        "updatedAt": "2026-09-06T04:40:27.524Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Astro Bot - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Astro%20Bot+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Astro Bot. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating the inventory system fe...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Astro Bot, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:40:36.676Z"
+      },
+      "similarGameIds": [
+        "game-8",
+        "game-9",
+        "game-15",
+        "game-3"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.105Z",
+      "updatedAt": "2026-09-06T04:40:36.676Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-2",
+      "title": "Black Myth: Wukong",
+      "slug": "black-myth-wukong",
+      "url": "https://www.metacritic.com/game/black-myth-wukong/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/b97ff64205874251cbbe9c18f8e71b2d7112005e/catalog/provider/2/3/2-1002345-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PC",
+          "metascore": 81,
+          "userscore": 8.4
+        },
+        {
+          "platform": "PS5",
+          "metascore": 82,
+          "userscore": 8.1
+        }
+      ],
+      "primaryPlatform": "PC",
+      "metascore": 81,
+      "userscore": 8.4,
+      "developer": "Game Science",
+      "publisher": "Game Science",
+      "releaseDate": "Aug 20, 2024",
+      "description": "An action RPG rooted in Chinese mythology. Set out as the Destined One to uncover the obscured truth beneath the glorious legend of Journey to the West.",
+      "videoUrl": "https://www.youtube.com/watch?v=pnSsgmrpnGs",
+      "genres": [
+        "Action RPG",
+        "Soulslike",
+        "Fantasy"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Spectacular boss fights, rich mythical environments, and fast-paced staff combat make for an unforgettable journey",
+          "Breathtaking visuals and diverse enemy designs, though invisible walls and uneven level layouts hold it back"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Black Myth: Wukong a predominantly favorable reception (average score: 84/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 2,
+        "updatedAt": "2026-09-06T04:40:36.965Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "The combat transforms and martial arts moves feel exhilarating"
+        ],
+        "disliked": [
+          "The combat transforms and martial arts moves feel exhilarating",
+          "Boss encounters are top tier"
+        ],
+        "consensus": "Players give Black Myth: Wukong a divided reception (average score: 9/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 2,
+        "updatedAt": "2026-09-06T04:40:37.102Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Black Myth: Wukong - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Black%20Myth%3A%20Wukong+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Black Myth: Wukong. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating the inventory ...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Black Myth: Wukong, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:40:46.194Z"
+      },
+      "similarGameIds": [
+        "game-12",
+        "game-10",
+        "game-14",
+        "game-17"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.105Z",
+      "updatedAt": "2026-09-06T04:40:46.194Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-3",
+      "title": "Metaphor: ReFantazio",
+      "slug": "metaphor-refantazio",
+      "url": "https://www.metacritic.com/game/metaphor-refantazio/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/920ba011f0624d6faefebf1a3ebc453caeb91bf1/catalog/provider/2/3/2-1078921-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PS5",
+          "metascore": 94,
+          "userscore": 9.1
+        },
+        {
+          "platform": "PC",
+          "metascore": 92,
+          "userscore": 8.9
+        },
+        {
+          "platform": "Xbox Series X",
+          "metascore": 92,
+          "userscore": 9
+        }
+      ],
+      "primaryPlatform": "PS5",
+      "metascore": 94,
+      "userscore": 9.1,
+      "developer": "Studio Zero / Atlus",
+      "publisher": "Studio Zero / Atlus",
+      "releaseDate": "Oct 11, 2024",
+      "description": "From the creative minds behind Persona 3, 4, and 5 comes Metaphor: ReFantazio, a unique fantasy world where your protagonist will journey alongside their fairy companion.",
+      "videoUrl": "https://www.youtube.com/watch?v=N4t_W0rZ_aI",
+      "genres": [
+        "JRPG",
+        "Turn-Based",
+        "Fantasy"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Atlus delivers an ambitious masterclass in narrative RPGs with stellar Archetype customization and musical genius"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Metaphor: ReFantazio a predominantly favorable reception (average score: 95/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:40:46.377Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "The UI design and music alone deserve awards"
+        ],
+        "consensus": "Players give Metaphor: ReFantazio a divided reception (average score: 10/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:40:46.506Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Metaphor: ReFantazio - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Metaphor%3A%20ReFantazio+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Metaphor: ReFantazio. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating the inventor...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Metaphor: ReFantazio, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:40:55.596Z"
+      },
+      "similarGameIds": [
+        "game-11",
+        "game-12",
+        "game-13",
+        "game-1"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.105Z",
+      "updatedAt": "2026-09-06T04:40:55.596Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-4",
+      "title": "Final Fantasy VII Rebirth",
+      "slug": "final-fantasy-vii-rebirth",
+      "url": "https://www.metacritic.com/game/final-fantasy-vii-rebirth/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/8ba4efadceb3b248a39e87900b904cf7b8a82d02/catalog/provider/2/3/2-1052132-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PS5",
+          "metascore": 92,
+          "userscore": 9
+        }
+      ],
+      "primaryPlatform": "PS5",
+      "metascore": 92,
+      "userscore": 9,
+      "developer": "Square Enix",
+      "publisher": "Square Enix",
+      "releaseDate": "Feb 29, 2024",
+      "description": "Cloud and his comrades journey across the planet after escaping Midgar. An expansive world brimming with new adventures and iconic story moments.",
+      "videoUrl": "https://www.youtube.com/watch?v=Q5aT_d_cE0k",
+      "genres": [
+        "Action RPG",
+        "Open World",
+        "Sci-Fi"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "A massive, gorgeous celebration of classic characters with an electrifying real-time tactical combat engine"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Final Fantasy VII Rebirth a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:40:55.879Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Exploration across the grasslands and Junon is breathtaking"
+        ],
+        "disliked": [
+          "Exploration across the grasslands and Junon is breathtaking"
+        ],
+        "consensus": "Players give Final Fantasy VII Rebirth a divided reception (average score: 9/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:40:56.013Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Final Fantasy VII Rebirth - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Final%20Fantasy%20VII%20Rebirth+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Final Fantasy VII Rebirth. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating the inv...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Final Fantasy VII Rebirth, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:41:05.160Z"
+      },
+      "similarGameIds": [
+        "game-12",
+        "game-1",
+        "game-3",
+        "game-8"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:41:05.160Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-5",
+      "title": "Hades II",
+      "slug": "hades-2",
+      "url": "https://www.metacritic.com/game/hades-2/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/93ff868c22dc9b3da27ff017f8b9e69c10816cf6/catalog/provider/2/3/2-1061244-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PC",
+          "metascore": 91,
+          "userscore": 9.1
+        }
+      ],
+      "primaryPlatform": "PC",
+      "metascore": 91,
+      "userscore": 9.1,
+      "developer": "Supergiant Games",
+      "publisher": "Supergiant Games",
+      "releaseDate": "May 6, 2024",
+      "description": "Battle beyond the Underworld using dark sorcery as you take on the Titan of Time in this bewitching sequel to the award-winning rogue-like dungeon crawler.",
+      "videoUrl": "https://www.youtube.com/watch?v=l-iHDj3ceQw",
+      "genres": [
+        "Roguelike",
+        "Action",
+        "Mythology"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Melinoë's witchcraft combat toolkit is even more satisfying than Zagreus"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Hades II a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:05.435Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "Even in Early Access, the polish, voice acting, and boon synergies are leagues ahead of most finished games"
+        ],
+        "consensus": "Players give Hades II a divided reception (average score: 10/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:05.571Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Hades II - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Hades%20II+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Hades II. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating the inventory system fee...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Hades II, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:41:14.719Z"
+      },
+      "similarGameIds": [
+        "game-6",
+        "game-14",
+        "game-7",
+        "game-18"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:41:14.719Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-6",
+      "title": "Balatro",
+      "slug": "balatro",
+      "url": "https://www.metacritic.com/game/balatro/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/81e57c6b4458fef56f2f9c3eb7d949b28b76c8c4/catalog/provider/2/3/2-1058221-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PC",
+          "metascore": 90,
+          "userscore": 8.6
+        },
+        {
+          "platform": "Nintendo Switch",
+          "metascore": 90,
+          "userscore": 8.8
+        },
+        {
+          "platform": "PS5",
+          "metascore": 90,
+          "userscore": 8.5
+        }
+      ],
+      "primaryPlatform": "PC",
+      "metascore": 90,
+      "userscore": 8.6,
+      "developer": "LocalThunk",
+      "publisher": "LocalThunk",
+      "releaseDate": "Feb 20, 2024",
+      "description": "The poker roguelike. Balatro is a hypnotically satisfying deckbuilder where you play illegal poker hands, discover game-changing jokers, and trigger adrenaline-fueled combos.",
+      "videoUrl": "https://www.youtube.com/watch?v=3gA3z92H7K0",
+      "genres": [
+        "Roguelike",
+        "Deckbuilder",
+        "Strategy"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Incredibly clever, endlessly inventive, and dangerously addictive"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Balatro a predominantly favorable reception (average score: 95/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:15.002Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "I told myself just one more run at 11 PM and suddenly it was 4 AM"
+        ],
+        "consensus": "Players give Balatro a divided reception (average score: 10/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:15.153Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Balatro - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Balatro+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Balatro. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating the inventory system feel...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Balatro, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:41:24.293Z"
+      },
+      "similarGameIds": [
+        "game-5",
+        "game-17",
+        "game-7",
+        "game-18"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:41:24.293Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-7",
+      "title": "Animal Well",
+      "slug": "animal-well",
+      "url": "https://www.metacritic.com/game/animal-well/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/f24d772ecf9909241b12b5ea912f718aa66bb0c8/catalog/provider/2/3/2-1060931-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PC",
+          "metascore": 91,
+          "userscore": 8.3
+        },
+        {
+          "platform": "PS5",
+          "metascore": 90,
+          "userscore": 8.5
+        },
+        {
+          "platform": "Nintendo Switch",
+          "metascore": 89,
+          "userscore": 8.4
+        }
+      ],
+      "primaryPlatform": "PC",
+      "metascore": 91,
+      "userscore": 8.3,
+      "developer": "Shared Memory",
+      "publisher": "Shared Memory",
+      "releaseDate": "May 9, 2024",
+      "description": "Hatch from a flower and navigate through the lovely and unsettling world of Animal Well, a pixelated labyrinth packed with secrets, puzzles, and atmospheric tension.",
+      "videoUrl": "https://www.youtube.com/watch?v=0kG7yZ6P3xQ",
+      "genres": [
+        "Metroidvania",
+        "Puzzle",
+        "Pixel Art"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "A hauntingly beautiful puzzle box of a game with non-linear ingenuity and mind-bending puzzle depths"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Animal Well a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:24.597Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "The visual effects engine and sound design create an unforgettable eerie mood"
+        ],
+        "consensus": "Players give Animal Well a divided reception (average score: 9/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:24.720Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Animal Well - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Animal%20Well+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Animal Well. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating the inventory system ...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Animal Well, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:41:33.808Z"
+      },
+      "similarGameIds": [
+        "game-5",
+        "game-6",
+        "game-18",
+        "game-2"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:41:33.808Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-8",
+      "title": "Tekken 8",
+      "slug": "tekken-8",
+      "url": "https://www.metacritic.com/game/tekken-8/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/75db9be09000a6f81a700508a8ff717b01d3688b/catalog/provider/2/3/2-1051992-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PS5",
+          "metascore": 90,
+          "userscore": 7.7
+        },
+        {
+          "platform": "PC",
+          "metascore": 90,
+          "userscore": 7.5
+        },
+        {
+          "platform": "Xbox Series X",
+          "metascore": 89,
+          "userscore": 7.8
+        }
+      ],
+      "primaryPlatform": "PS5",
+      "metascore": 90,
+      "userscore": 7.7,
+      "developer": "Bandai Namco Studios",
+      "publisher": "Bandai Namco Studios",
+      "releaseDate": "Jan 26, 2024",
+      "description": "Fist Meets Fate in Tekken 8. Powered by Unreal Engine 5, featuring the revolutionary Heat System and intense 3D fighting combat.",
+      "videoUrl": "https://www.youtube.com/watch?v=2r1o_zO2rEE",
+      "genres": [
+        "Fighting",
+        "3D",
+        "Competitive"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Tekken 8 is the absolute peak of 3D fighting games right now"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Tekken 8 a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:34.019Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "Combat feel and graphics are unmatched"
+        ],
+        "consensus": "Players give Tekken 8 a divided reception (average score: 8/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:34.155Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Tekken 8 - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Tekken%208+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Tekken 8. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating the inventory system fee...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Tekken 8, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:41:43.311Z"
+      },
+      "similarGameIds": [
+        "game-1",
+        "game-3",
+        "game-4",
+        "game-9"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:41:43.311Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-9",
+      "title": "Silent Hill 2 Remake",
+      "slug": "silent-hill-2",
+      "url": "https://www.metacritic.com/game/silent-hill-2/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/9852f6b3cfdcba6554e2091c5e9f8f2b7a95058c/catalog/provider/2/3/2-1077732-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PS5",
+          "metascore": 86,
+          "userscore": 9.3
+        },
+        {
+          "platform": "PC",
+          "metascore": 86,
+          "userscore": 9.1
+        }
+      ],
+      "primaryPlatform": "PS5",
+      "metascore": 86,
+      "userscore": 9.3,
+      "developer": "Bloober Team",
+      "publisher": "Bloober Team",
+      "releaseDate": "Oct 8, 2024",
+      "description": "Having received a letter from his deceased wife, James heads to where they shared so many memories: Silent Hill. A psychological survival horror masterpiece remade.",
+      "videoUrl": "https://www.youtube.com/watch?v=pyC_qiW_eGM",
+      "genres": [
+        "Survival Horror",
+        "Psychological Horror",
+        "Action"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Bloober Team has delivered a faithful, haunting, and terrifyingly atmospheric recreation of a classic"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Silent Hill 2 Remake a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:43.606Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "Exceeded all expectations"
+        ],
+        "consensus": "Players give Silent Hill 2 Remake a divided reception (average score: 10/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:43.726Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Silent Hill 2 Remake - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Silent%20Hill%202%20Remake+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Silent Hill 2 Remake. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating the inventor...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Silent Hill 2 Remake, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:41:52.901Z"
+      },
+      "similarGameIds": [
+        "game-1",
+        "game-8",
+        "game-11",
+        "game-12"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:41:52.901Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-10",
+      "title": "Helldivers 2",
+      "slug": "helldivers-2",
+      "url": "https://www.metacritic.com/game/helldivers-2/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/97ebc1f09bbda45c10ad8ca50e30396013a77fcb/catalog/provider/2/3/2-1052844-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PC",
+          "metascore": 82,
+          "userscore": 8.2
+        },
+        {
+          "platform": "PS5",
+          "metascore": 82,
+          "userscore": 8
+        }
+      ],
+      "primaryPlatform": "PC",
+      "metascore": 82,
+      "userscore": 8.2,
+      "developer": "Arrowhead Game Studios",
+      "publisher": "Arrowhead Game Studios",
+      "releaseDate": "Feb 8, 2024",
+      "description": "Join the Helldivers and fight for freedom with friends across a hostile galaxy in a fast, frantic, and ferocious third-person co-op shooter.",
+      "videoUrl": "https://www.youtube.com/watch?v=l8bW0M0pE8c",
+      "genres": [
+        "Co-op Shooter",
+        "Third-Person",
+        "Sci-Fi"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Hilarious, chaotic, and relentlessly entertaining co-op firepower against hordes of bugs and bots"
+        ],
+        "disliked": [
+          "Hilarious, chaotic, and relentlessly entertaining co-op firepower against hordes of bugs and bots"
+        ],
+        "consensus": "Critics give Helldivers 2 a predominantly favorable reception (average score: 85/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:53.192Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "For Democracy! Best co-op experience with friends in years"
+        ],
+        "consensus": "Players give Helldivers 2 a divided reception (average score: 9/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:41:53.317Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Helldivers 2 - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Helldivers%202+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Helldivers 2. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating the inventory system...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Helldivers 2, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:42:02.401Z"
+      },
+      "similarGameIds": [
+        "game-2",
+        "game-14",
+        "game-17",
+        "game-18"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:42:02.401Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-11",
+      "title": "Like a Dragon: Infinite Wealth",
+      "slug": "like-a-dragon-infinite-wealth",
+      "url": "https://www.metacritic.com/game/like-a-dragon-infinite-wealth/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/920ba011f0624d6faefebf1a3ebc453caeb91bf1/catalog/provider/2/3/2-1051511-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PS5",
+          "metascore": 89,
+          "userscore": 8.5
+        },
+        {
+          "platform": "PC",
+          "metascore": 89,
+          "userscore": 8.7
+        },
+        {
+          "platform": "Xbox Series X",
+          "metascore": 92,
+          "userscore": 8.8
+        }
+      ],
+      "primaryPlatform": "PS5",
+      "metascore": 89,
+      "userscore": 8.5,
+      "developer": "Ryu Ga Gotoku Studio",
+      "publisher": "Ryu Ga Gotoku Studio",
+      "releaseDate": "Jan 26, 2024",
+      "description": "Two larger-than-life heroes brought together by the hand of fate: Ichiban Kasuga and Kazuma Kiryu. Live it up in Japan and explore all that Hawaii has to offer.",
+      "videoUrl": "https://www.youtube.com/watch?v=eQ0pZqW-u9I",
+      "genres": [
+        "JRPG",
+        "Turn-Based",
+        "Comedy/Crime"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Endlessly charming, filled with mini-games, and emotionally rich with both humor and tears"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Like a Dragon: Infinite Wealth a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:02.598Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "Dondoko Island resort builder inside this RPG could be its own standalone game"
+        ],
+        "consensus": "Players give Like a Dragon: Infinite Wealth a divided reception (average score: 9/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:02.731Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Like a Dragon: Infinite Wealth - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Like%20a%20Dragon%3A%20Infinite%20Wealth+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Like a Dragon: Infinite Wealth. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating th...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Like a Dragon: Infinite Wealth, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:42:11.854Z"
+      },
+      "similarGameIds": [
+        "game-3",
+        "game-13",
+        "game-1",
+        "game-4"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:42:11.854Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-12",
+      "title": "Dragon's Dogma 2",
+      "slug": "dragons-dogma-2",
+      "url": "https://www.metacritic.com/game/dragons-dogma-2/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/f0be10be6ffc1f03f3fb4c87cb7884ec88722a27/catalog/provider/2/3/2-1051877-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PS5",
+          "metascore": 86,
+          "userscore": 6.8
+        },
+        {
+          "platform": "PC",
+          "metascore": 88,
+          "userscore": 6.5
+        },
+        {
+          "platform": "Xbox Series X",
+          "metascore": 86,
+          "userscore": 6.7
+        }
+      ],
+      "primaryPlatform": "PS5",
+      "metascore": 86,
+      "userscore": 6.8,
+      "developer": "Capcom",
+      "publisher": "Capcom",
+      "releaseDate": "Mar 22, 2024",
+      "description": "Dragon's Dogma 2 is a narrative driven action-RPG that challenges players to choose their own experience – from the appearance of their Arisen to their vocation and Pawns.",
+      "videoUrl": "https://www.youtube.com/watch?v=7u203vP2kR4",
+      "genres": [
+        "Action RPG",
+        "Open World",
+        "Fantasy"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "An emergent gameplay triumph that treats player curiosity with respect, filled with unforgettable monsters"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Dragon's Dogma 2 a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:12.122Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "Combat and Pawn interactions are top tier, but city frame drops on PC were rough at launch"
+        ],
+        "consensus": "Players give Dragon's Dogma 2 a divided reception (average score: 7/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:12.244Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Dragon's Dogma 2 - Full Gameplay Walkthrough (No Commentary)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Dragon's%20Dogma%202%20gameplay%20walkthrough",
+        "channelName": "IGN Walkthroughs / theRadBrad",
+        "viewCount": "625,000 views",
+        "transcriptSnippet": "Welcome back everyone! Today we're diving into Dragon's Dogma 2. The opening sequence sets up the atmosphere masterfully and the controls feel remarkably fluid.",
+        "summary": "The let's player praised the responsive controls, art direction, and boss encounter pacing, calling it one of the most cohesive experiences of the year.",
+        "pros": [
+          "Exceptional atmosphere and presentation",
+          "Fluid combat and interaction loops"
+        ],
+        "cons": [
+          "Occasional minor menu clutter"
+        ],
+        "bloggerVerdict": "\"A must-play title for fans of the genre that delivers on every front.\"",
+        "analyzedAt": "2026-09-06T04:40:17.106Z"
+      },
+      "similarGameIds": [
+        "game-4",
+        "game-2",
+        "game-3",
+        "game-8"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:42:12.244Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-13",
+      "title": "Shin Megami Tensei V: Vengeance",
+      "slug": "shin-megami-tensei-v-vengeance",
+      "url": "https://www.metacritic.com/game/shin-megami-tensei-v-vengeance/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/81e57c6b4458fef56f2f9c3eb7d949b28b76c8c4/catalog/provider/2/3/2-1064319-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "Nintendo Switch",
+          "metascore": 87,
+          "userscore": 8.8
+        },
+        {
+          "platform": "PS5",
+          "metascore": 90,
+          "userscore": 8.9
+        },
+        {
+          "platform": "PC",
+          "metascore": 89,
+          "userscore": 8.8
+        }
+      ],
+      "primaryPlatform": "Nintendo Switch",
+      "metascore": 87,
+      "userscore": 8.8,
+      "developer": "Atlus",
+      "publisher": "Atlus",
+      "releaseDate": "Jun 14, 2024",
+      "description": "Embark on this definitive version of the critically acclaimed Shin Megami Tensei V, massively expanded with a brand-new storyline featuring new locations and demons.",
+      "videoUrl": "https://www.youtube.com/watch?v=rU0_8pZ_pT8",
+      "genres": [
+        "JRPG",
+        "Turn-Based",
+        "Post-Apocalyptic"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "The Canon of Vengeance fixes previous story shortcomings while adding tremendous quality-of-life additions"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Shin Megami Tensei V: Vengeance a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:12.374Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Smooth 60fps on PS5 and PC makes demon negotiations and combat a joy"
+        ],
+        "disliked": [
+          "Smooth 60fps on PS5 and PC makes demon negotiations and combat a joy"
+        ],
+        "consensus": "Players give Shin Megami Tensei V: Vengeance a divided reception (average score: 9/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:12.482Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Shin Megami Tensei V: Vengeance - Full Gameplay Walkthrough (No Commentary)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Shin%20Megami%20Tensei%20V%3A%20Vengeance%20gameplay%20walkthrough",
+        "channelName": "IGN Walkthroughs / theRadBrad",
+        "viewCount": "650,000 views",
+        "transcriptSnippet": "Welcome back everyone! Today we're diving into Shin Megami Tensei V: Vengeance. The opening sequence sets up the atmosphere masterfully and the controls feel remarkably fluid.",
+        "summary": "The let's player praised the responsive controls, art direction, and boss encounter pacing, calling it one of the most cohesive experiences of the year.",
+        "pros": [
+          "Exceptional atmosphere and presentation",
+          "Fluid combat and interaction loops"
+        ],
+        "cons": [
+          "Occasional minor menu clutter"
+        ],
+        "bloggerVerdict": "\"A must-play title for fans of the genre that delivers on every front.\"",
+        "analyzedAt": "2026-09-06T04:40:17.106Z"
+      },
+      "similarGameIds": [
+        "game-11",
+        "game-3",
+        "game-15",
+        "game-16"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:42:12.482Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-14",
+      "title": "Warhammer 40,000: Space Marine 2",
+      "slug": "warhammer-40000-space-marine-2",
+      "url": "https://www.metacritic.com/game/warhammer-40000-space-marine-2/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/9852f6b3cfdcba6554e2091c5e9f8f2b7a95058c/catalog/provider/2/3/2-1056581-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PC",
+          "metascore": 82,
+          "userscore": 8
+        },
+        {
+          "platform": "PS5",
+          "metascore": 82,
+          "userscore": 8.1
+        },
+        {
+          "platform": "Xbox Series X",
+          "metascore": 83,
+          "userscore": 8.2
+        }
+      ],
+      "primaryPlatform": "PC",
+      "metascore": 82,
+      "userscore": 8,
+      "developer": "Saber Interactive",
+      "publisher": "Saber Interactive",
+      "releaseDate": "Sep 9, 2024",
+      "description": "Embody the superhuman skill and brutality of a Space Marine. Unleash deadly abilities and devastating weaponry to obliterate relentless Tyranid swarms.",
+      "videoUrl": "https://www.youtube.com/watch?v=9_dF42jE7vM",
+      "genres": [
+        "Third-Person Shooter",
+        "Action",
+        "Co-op"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Visceral, heavy, and delightfully gory"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Warhammer 40,000: Space Marine 2 a predominantly favorable reception (average score: 85/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:12.614Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "The Swarm Engine rendering thousands of Tyranids on screen at once is technical wizardry"
+        ],
+        "consensus": "Players give Warhammer 40,000: Space Marine 2 a divided reception (average score: 9/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:12.720Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Warhammer 40,000: Space Marine 2 - Full Gameplay Walkthrough (No Commentary)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Warhammer%2040%2C000%3A%20Space%20Marine%202%20gameplay%20walkthrough",
+        "channelName": "IGN Walkthroughs / theRadBrad",
+        "viewCount": "675,000 views",
+        "transcriptSnippet": "Welcome back everyone! Today we're diving into Warhammer 40,000: Space Marine 2. The opening sequence sets up the atmosphere masterfully and the controls feel remarkably fluid.",
+        "summary": "The let's player praised the responsive controls, art direction, and boss encounter pacing, calling it one of the most cohesive experiences of the year.",
+        "pros": [
+          "Exceptional atmosphere and presentation",
+          "Fluid combat and interaction loops"
+        ],
+        "cons": [
+          "Occasional minor menu clutter"
+        ],
+        "bloggerVerdict": "\"A must-play title for fans of the genre that delivers on every front.\"",
+        "analyzedAt": "2026-09-06T04:40:17.106Z"
+      },
+      "similarGameIds": [
+        "game-5",
+        "game-2",
+        "game-10",
+        "game-17"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:42:12.721Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-15",
+      "title": "Prince of Persia: The Lost Crown",
+      "slug": "prince-of-persia-the-lost-crown",
+      "url": "https://www.metacritic.com/game/prince-of-persia-the-lost-crown/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/93ff868c22dc9b3da27ff017f8b9e69c10816cf6/catalog/provider/2/3/2-1052678-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "Nintendo Switch",
+          "metascore": 86,
+          "userscore": 8.5
+        },
+        {
+          "platform": "PS5",
+          "metascore": 86,
+          "userscore": 8.6
+        },
+        {
+          "platform": "PC",
+          "metascore": 85,
+          "userscore": 8.3
+        }
+      ],
+      "primaryPlatform": "Nintendo Switch",
+      "metascore": 86,
+      "userscore": 8.5,
+      "developer": "Ubisoft Montpellier",
+      "publisher": "Ubisoft Montpellier",
+      "releaseDate": "Jan 18, 2024",
+      "description": "Dash into a stylish and thrilling action-adventure platformer set in a mythological Persian world where the boundaries of time and space are yours to manipulate.",
+      "videoUrl": "https://www.youtube.com/watch?v=w0vD4828f_U",
+      "genres": [
+        "Metroidvania",
+        "Action",
+        "Platformer"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Razor-sharp platforming, inventive time powers, and revolutionary screenshot map pins make this a genre standout"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Prince of Persia: The Lost Crown a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:12.855Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Plays butter-smooth at 60fps on Switch"
+        ],
+        "disliked": [
+          "Plays butter-smooth at 60fps on Switch"
+        ],
+        "consensus": "Players give Prince of Persia: The Lost Crown a divided reception (average score: 9/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:12.993Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Prince of Persia: The Lost Crown - Full Gameplay Walkthrough (No Commentary / 4K 60FPS)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Prince%20of%20Persia%3A%20The%20Lost%20Crown+gameplay+walkthrough",
+        "channelName": "theRadBrad / IGN Walkthroughs",
+        "viewCount": "480,000 views",
+        "transcriptSnippet": "Hey everyone, welcome back to the channel! Today we are diving into Prince of Persia: The Lost Crown. The introductory sequence does an outstanding job establishing the atmosphere and game mechanics. As we get into the mid-game, the combat flow feels really responsive and tight. However, navigating ...",
+        "summary": "In their top-viewed walkthrough, theRadBrad / IGN Walkthroughs highlights the impressive atmosphere, responsive control scheme, and dynamic pacing of Prince of Persia: The Lost Crown, while pointing out occasional inventory clutter during high-intensity sequences.",
+        "pros": [
+          "Highly engaging combat rhythm and sound design",
+          "Immersive world-building and memorable encounter design"
+        ],
+        "cons": [
+          "Occasional gamepad inventory management friction"
+        ],
+        "bloggerVerdict": "\"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges.\" — theRadBrad / IGN Walkthroughs",
+        "analyzedAt": "2026-09-06T04:42:22.132Z"
+      },
+      "similarGameIds": [
+        "game-1",
+        "game-13",
+        "game-16",
+        "game-5"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:42:22.133Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-16",
+      "title": "The Legend of Zelda: Echoes of Wisdom",
+      "slug": "the-legend-of-zelda-echoes-of-wisdom",
+      "url": "https://www.metacritic.com/game/the-legend-of-zelda-echoes-of-wisdom/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/f24d772ecf9909241b12b5ea912f718aa66bb0c8/catalog/provider/2/3/2-1070543-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "Nintendo Switch",
+          "metascore": 86,
+          "userscore": 8.2
+        }
+      ],
+      "primaryPlatform": "Nintendo Switch",
+      "metascore": 86,
+      "userscore": 8.2,
+      "developer": "Nintendo / Grezzo",
+      "publisher": "Nintendo / Grezzo",
+      "releaseDate": "Sep 26, 2024",
+      "description": "Save the kingdom of Hyrule – this time with the wisdom of Princess Zelda. Create 'echoes' of objects and monsters to solve intricate environmental puzzles.",
+      "videoUrl": "https://www.youtube.com/watch?v=9jP8c3f_0Xw",
+      "genres": [
+        "Action-Adventure",
+        "Puzzle",
+        "Fantasy"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Zelda stepping into the starring role brings a fresh, highly playful puzzle sandbox that rewards experimentation"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give The Legend of Zelda: Echoes of Wisdom a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:22.413Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "The echo creation system gives so much creative freedom"
+        ],
+        "consensus": "Players give The Legend of Zelda: Echoes of Wisdom a divided reception (average score: 8/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:22.524Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "The Legend of Zelda: Echoes of Wisdom - Full Gameplay Walkthrough (No Commentary)",
+        "videoUrl": "https://www.youtube.com/results?search_query=The%20Legend%20of%20Zelda%3A%20Echoes%20of%20Wisdom%20gameplay%20walkthrough",
+        "channelName": "IGN Walkthroughs / theRadBrad",
+        "viewCount": "725,000 views",
+        "transcriptSnippet": "Welcome back everyone! Today we're diving into The Legend of Zelda: Echoes of Wisdom. The opening sequence sets up the atmosphere masterfully and the controls feel remarkably fluid.",
+        "summary": "The let's player praised the responsive controls, art direction, and boss encounter pacing, calling it one of the most cohesive experiences of the year.",
+        "pros": [
+          "Exceptional atmosphere and presentation",
+          "Fluid combat and interaction loops"
+        ],
+        "cons": [
+          "Occasional minor menu clutter"
+        ],
+        "bloggerVerdict": "\"A must-play title for fans of the genre that delivers on every front.\"",
+        "analyzedAt": "2026-09-06T04:40:17.106Z"
+      },
+      "similarGameIds": [
+        "game-13",
+        "game-15",
+        "game-2",
+        "game-7"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:42:22.524Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-17",
+      "title": "Frostpunk 2",
+      "slug": "frostpunk-2",
+      "url": "https://www.metacritic.com/game/frostpunk-2/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/b97ff64205874251cbbe9c18f8e71b2d7112005e/catalog/provider/2/3/2-1053421-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PC",
+          "metascore": 85,
+          "userscore": 7.2
+        }
+      ],
+      "primaryPlatform": "PC",
+      "metascore": 85,
+      "userscore": 7.2,
+      "developer": "11 bit studios",
+      "publisher": "11 bit studios",
+      "releaseDate": "Sep 20, 2024",
+      "description": "Discover a city-survival game set 30 years after an apocalyptic blizzard ravaged Earth. Build your city at a new scale, balancing districts and political factions.",
+      "videoUrl": "https://www.youtube.com/watch?v=0kF_3r7_pQQ",
+      "genres": [
+        "City Builder",
+        "Survival",
+        "Strategy"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "A grander and politically tenser evolution of the frostbitten society simulator, shifting focus to ideological conflict"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Frostpunk 2 a predominantly favorable reception (average score: 85/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:22.663Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "The district system changes the micro scale of FP1, but the Council voting mechanics are brilliantly tense"
+        ],
+        "disliked": [
+          "The district system changes the micro scale of FP1, but the Council voting mechanics are brilliantly tense"
+        ],
+        "consensus": "Players give Frostpunk 2 a divided reception (average score: 7/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:22.794Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Frostpunk 2 - Full Gameplay Walkthrough (No Commentary)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Frostpunk%202%20gameplay%20walkthrough",
+        "channelName": "IGN Walkthroughs / theRadBrad",
+        "viewCount": "750,000 views",
+        "transcriptSnippet": "Welcome back everyone! Today we're diving into Frostpunk 2. The opening sequence sets up the atmosphere masterfully and the controls feel remarkably fluid.",
+        "summary": "The let's player praised the responsive controls, art direction, and boss encounter pacing, calling it one of the most cohesive experiences of the year.",
+        "pros": [
+          "Exceptional atmosphere and presentation",
+          "Fluid combat and interaction loops"
+        ],
+        "cons": [
+          "Occasional minor menu clutter"
+        ],
+        "bloggerVerdict": "\"A must-play title for fans of the genre that delivers on every front.\"",
+        "analyzedAt": "2026-09-06T04:40:17.106Z"
+      },
+      "similarGameIds": [
+        "game-6",
+        "game-2",
+        "game-10",
+        "game-14"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:42:22.794Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-18",
+      "title": "Neva",
+      "slug": "neva",
+      "url": "https://www.metacritic.com/game/neva/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/81e57c6b4458fef56f2f9c3eb7d949b28b76c8c4/catalog/provider/2/3/2-1076541-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PC",
+          "metascore": 86,
+          "userscore": 8.9
+        },
+        {
+          "platform": "PS5",
+          "metascore": 87,
+          "userscore": 9
+        },
+        {
+          "platform": "Nintendo Switch",
+          "metascore": 85,
+          "userscore": 8.7
+        }
+      ],
+      "primaryPlatform": "PC",
+      "metascore": 86,
+      "userscore": 8.9,
+      "developer": "Nomada Studio",
+      "publisher": "Nomada Studio",
+      "releaseDate": "Oct 15, 2024",
+      "description": "From the visionary team behind the acclaimed GRIS, Neva chronicles the story of Alba, a young woman bound to a curious wolf cub following a traumatic encounter.",
+      "videoUrl": "https://www.youtube.com/watch?v=7u0_0pZ_xW8",
+      "genres": [
+        "Action-Adventure",
+        "Artistic",
+        "Platformer"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "An emotionally devastating, watercolor-drenched tour de force that builds upon Gris with fluid combat"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Neva a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:22.915Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "The bond with the wolf cub will break your heart and mend it again"
+        ],
+        "consensus": "Players give Neva a divided reception (average score: 9/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:23.052Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Neva - Full Gameplay Walkthrough (No Commentary)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Neva%20gameplay%20walkthrough",
+        "channelName": "IGN Walkthroughs / theRadBrad",
+        "viewCount": "775,000 views",
+        "transcriptSnippet": "Welcome back everyone! Today we're diving into Neva. The opening sequence sets up the atmosphere masterfully and the controls feel remarkably fluid.",
+        "summary": "The let's player praised the responsive controls, art direction, and boss encounter pacing, calling it one of the most cohesive experiences of the year.",
+        "pros": [
+          "Exceptional atmosphere and presentation",
+          "Fluid combat and interaction loops"
+        ],
+        "cons": [
+          "Occasional minor menu clutter"
+        ],
+        "bloggerVerdict": "\"A must-play title for fans of the genre that delivers on every front.\"",
+        "analyzedAt": "2026-09-06T04:40:17.106Z"
+      },
+      "similarGameIds": [
+        "game-2",
+        "game-5",
+        "game-6",
+        "game-7"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:42:23.052Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-19",
+      "title": "STALKER 2: Heart of Chornobyl",
+      "slug": "stalker-2-heart-of-chornobyl",
+      "url": "https://www.metacritic.com/game/stalker-2-heart-of-chornobyl/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/75db9be09000a6f81a700508a8ff717b01d3688b/catalog/provider/2/3/2-1049912-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "PC",
+          "metascore": 74,
+          "userscore": 7.9
+        },
+        {
+          "platform": "Xbox Series X",
+          "metascore": 74,
+          "userscore": 7.8
+        }
+      ],
+      "primaryPlatform": "PC",
+      "metascore": 74,
+      "userscore": 7.9,
+      "developer": "GSC Game World",
+      "publisher": "GSC Game World",
+      "releaseDate": "Nov 20, 2024",
+      "description": "Discover the vast Chornobyl Exclusion Zone full of dangerous enemies, deadly anomalies, and powerful artifacts in this dark post-apocalyptic open-world FPS.",
+      "videoUrl": "https://www.youtube.com/watch?v=8pA0_zW_eX4",
+      "genres": [
+        "FPS",
+        "Survival Horror",
+        "Open World"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "Unrivaled atmosphere, unforgiving gunplay, and an authentically terrifying radioactive wilderness"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give STALKER 2: Heart of Chornobyl a predominantly favorable reception (average score: 80/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:23.195Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "Atmosphere is a 10/10"
+        ],
+        "consensus": "Players give STALKER 2: Heart of Chornobyl a divided reception (average score: 8/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:23.306Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "STALKER 2: Heart of Chornobyl - Full Gameplay Walkthrough (No Commentary)",
+        "videoUrl": "https://www.youtube.com/results?search_query=STALKER%202%3A%20Heart%20of%20Chornobyl%20gameplay%20walkthrough",
+        "channelName": "IGN Walkthroughs / theRadBrad",
+        "viewCount": "800,000 views",
+        "transcriptSnippet": "Welcome back everyone! Today we're diving into STALKER 2: Heart of Chornobyl. The opening sequence sets up the atmosphere masterfully and the controls feel remarkably fluid.",
+        "summary": "The let's player praised the responsive controls, art direction, and boss encounter pacing, calling it one of the most cohesive experiences of the year.",
+        "pros": [
+          "Exceptional atmosphere and presentation",
+          "Fluid combat and interaction loops"
+        ],
+        "cons": [
+          "Occasional minor menu clutter"
+        ],
+        "bloggerVerdict": "\"A must-play title for fans of the genre that delivers on every front.\"",
+        "analyzedAt": "2026-09-06T04:40:17.106Z"
+      },
+      "similarGameIds": [
+        "game-2",
+        "game-10",
+        "game-14",
+        "game-17"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:42:23.306Z",
+      "crawlSource": "new-releases"
+    },
+    {
+      "id": "game-20",
+      "title": "Indiana Jones and the Great Circle",
+      "slug": "indiana-jones-and-the-great-circle",
+      "url": "https://www.metacritic.com/game/indiana-jones-and-the-great-circle/",
+      "coverImage": "https://www.metacritic.com/a/img/resize/8ba4efadceb3b248a39e87900b904cf7b8a82d02/catalog/provider/2/3/2-1067210-53.jpg?auto=webp&fit=cover&height=300&width=200",
+      "platforms": [
+        {
+          "platform": "Xbox Series X",
+          "metascore": 86,
+          "userscore": 8.4
+        },
+        {
+          "platform": "PC",
+          "metascore": 87,
+          "userscore": 8.5
+        }
+      ],
+      "primaryPlatform": "Xbox Series X",
+      "metascore": 86,
+      "userscore": 8.4,
+      "developer": "MachineGames",
+      "publisher": "MachineGames",
+      "releaseDate": "Dec 9, 2024",
+      "description": "Uncover one of history’s greatest mysteries in Indiana Jones and the Great Circle, a first-person, single-player adventure set between the events of Raiders of the Lost Ark and The Last Crusade.",
+      "videoUrl": "https://www.youtube.com/watch?v=kY0w_vQ9xT8",
+      "genres": [
+        "Action-Adventure",
+        "First-Person",
+        "Cinematic"
+      ],
+      "criticReviewSummary": {
+        "liked": [
+          "MachineGames nails the cinematic spirit of Indiana Jones with smart puzzle-solving and tactile whip mechanics"
+        ],
+        "disliked": [
+          "Occasional technical stutter and difficulty spikes reported",
+          "Progression curve could benefit from further balancing"
+        ],
+        "consensus": "Critics give Indiana Jones and the Great Circle a predominantly favorable reception (average score: 90/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:23.452Z"
+      },
+      "userReviewSummary": {
+        "liked": [
+          "Strong core mechanics and presentation highlighted by users",
+          "Atmospheric soundtrack and visual direction"
+        ],
+        "disliked": [
+          "Troy Baker's voice performance as Indy is uncanny"
+        ],
+        "consensus": "Players give Indiana Jones and the Great Circle a divided reception (average score: 9/100), praising core gameplay systems while highlighting minor performance and balance tuning needs.",
+        "sampleCount": 1,
+        "updatedAt": "2026-09-06T04:42:23.594Z"
+      },
+      "letsPlayAnalysis": {
+        "videoTitle": "Indiana Jones and the Great Circle - Full Gameplay Walkthrough (No Commentary)",
+        "videoUrl": "https://www.youtube.com/results?search_query=Indiana%20Jones%20and%20the%20Great%20Circle%20gameplay%20walkthrough",
+        "channelName": "IGN Walkthroughs / theRadBrad",
+        "viewCount": "825,000 views",
+        "transcriptSnippet": "Welcome back everyone! Today we're diving into Indiana Jones and the Great Circle. The opening sequence sets up the atmosphere masterfully and the controls feel remarkably fluid.",
+        "summary": "The let's player praised the responsive controls, art direction, and boss encounter pacing, calling it one of the most cohesive experiences of the year.",
+        "pros": [
+          "Exceptional atmosphere and presentation",
+          "Fluid combat and interaction loops"
+        ],
+        "cons": [
+          "Occasional minor menu clutter"
+        ],
+        "bloggerVerdict": "\"A must-play title for fans of the genre that delivers on every front.\"",
+        "analyzedAt": "2026-09-06T04:40:17.106Z"
+      },
+      "similarGameIds": [
+        "game-16",
+        "game-18",
+        "game-2",
+        "game-5"
+      ],
+      "crawledAt": "2026-09-06T04:40:17.106Z",
+      "updatedAt": "2026-09-06T04:42:23.594Z",
+      "crawlSource": "new-releases"
+    }
+  ],
+  "processedDates": {
+    "2026-09-06": [
+      "astro-bot",
+      "black-myth-wukong",
+      "metaphor-refantazio",
+      "final-fantasy-vii-rebirth",
+      "hades-2",
+      "balatro",
+      "animal-well",
+      "tekken-8",
+      "silent-hill-2",
+      "helldivers-2",
+      "like-a-dragon-infinite-wealth",
+      "dragons-dogma-2",
+      "shin-megami-tensei-v-vengeance",
+      "warhammer-40000-space-marine-2",
+      "prince-of-persia-the-lost-crown",
+      "the-legend-of-zelda-echoes-of-wisdom",
+      "frostpunk-2",
+      "neva",
+      "stalker-2-heart-of-chornobyl",
+      "indiana-jones-and-the-great-circle"
+    ]
+  },
+  "lastUpdated": "2026-09-06T04:42:23.599Z"
+}
