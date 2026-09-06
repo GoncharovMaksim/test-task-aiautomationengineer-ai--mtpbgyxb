@@ -54,7 +54,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Sony Interactive Entertainment",
     releaseDate: "Sep 6, 2024",
     description: "Join ASTRO on a supersized space adventure! The PS5 mothership has been wrecked, leaving ASTRO and the bot crew scattered across galaxies.",
-    videoUrl: "https://www.youtube.com/watch?v=k5lO_2rZ_E0",
+    videoUrl: "https://www.youtube.com/watch?v=unYFdcEjV9k",
     genres: ["Platformer", "3D", "Action"],
     criticReviews: [
       { id: "c1", author: "IGN", score: 100, date: "Sep 5, 2024", content: "Astro Bot is a joyous masterpiece of 3D platforming that celebrates PlayStation history with relentless creativity and immaculate DualSense haptics.", type: "critic" },
@@ -81,7 +81,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Game Science",
     releaseDate: "Aug 20, 2024",
     description: "An action RPG rooted in Chinese mythology. Set out as the Destined One to uncover the obscured truth beneath the glorious legend of Journey to the West.",
-    videoUrl: "https://www.youtube.com/watch?v=pnSsgmrpnGs",
+    videoUrl: "https://www.youtube.com/watch?v=uT6RZBz9ueM",
     genres: ["Action RPG", "Soulslike", "Fantasy"],
     criticReviews: [
       { id: "c4", author: "PC Gamer", score: 87, date: "Aug 19, 2024", content: "Spectacular boss fights, rich mythical environments, and fast-paced staff combat make for an unforgettable journey.", type: "critic" },
@@ -108,7 +108,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Sega",
     releaseDate: "Oct 11, 2024",
     description: "From the creative minds behind Persona 3, 4, and 5 comes Metaphor: ReFantazio, a unique fantasy world where your protagonist will journey alongside their fairy companion.",
-    videoUrl: "https://www.youtube.com/watch?v=N4t_W0rZ_aI",
+    videoUrl: "https://www.youtube.com/watch?v=SjbgJaYi4NE",
     genres: ["JRPG", "Turn-Based", "Fantasy"],
     criticReviews: [
       { id: "c6", author: "Game Informer", score: 95, date: "Oct 9, 2024", content: "Atlus delivers an ambitious masterclass in narrative RPGs with stellar Archetype customization and musical genius.", type: "critic" }
@@ -129,7 +129,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Square Enix",
     releaseDate: "Feb 29, 2024",
     description: "Cloud and his comrades journey across the planet after escaping Midgar. An expansive world brimming with new adventures and iconic story moments.",
-    videoUrl: "https://www.youtube.com/watch?v=Q5aT_d_cE0k",
+    videoUrl: "https://www.youtube.com/watch?v=Q56cRDseTGQ",
     genres: ["Action RPG", "Open World", "Sci-Fi"],
     criticReviews: [
       { id: "c7", author: "Kotaku", score: 90, date: "Feb 28, 2024", content: "A massive, gorgeous celebration of classic characters with an electrifying real-time tactical combat engine.", type: "critic" }
@@ -150,7 +150,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Supergiant Games",
     releaseDate: "May 6, 2024",
     description: "Battle beyond the Underworld using dark sorcery as you take on the Titan of Time in this bewitching sequel to the award-winning rogue-like dungeon crawler.",
-    videoUrl: "https://www.youtube.com/watch?v=l-iHDj3ceQw",
+    videoUrl: "https://www.youtube.com/watch?v=U8lJRcUeEMs",
     genres: ["Roguelike", "Action", "Mythology"],
     criticReviews: [
       { id: "c8", author: "Rock Paper Shotgun", score: 90, date: "May 10, 2024", content: "Melinoë's witchcraft combat toolkit is even more satisfying than Zagreus. Supergiant has struck gold once again.", type: "critic" }
@@ -175,7 +175,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Playstack",
     releaseDate: "Feb 20, 2024",
     description: "The poker roguelike. Balatro is a hypnotically satisfying deckbuilder where you play illegal poker hands, discover game-changing jokers, and trigger adrenaline-fueled combos.",
-    videoUrl: "https://www.youtube.com/watch?v=3gA3z92H7K0",
+    videoUrl: "https://www.youtube.com/watch?v=VUyP21iQ_-g",
     genres: ["Roguelike", "Deckbuilder", "Strategy"],
     criticReviews: [
       { id: "c9", author: "Polygon", score: 95, date: "Feb 22, 2024", content: "Incredibly clever, endlessly inventive, and dangerously addictive. The best roguelike since Slay the Spire.", type: "critic" }
@@ -200,7 +200,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Bigmode",
     releaseDate: "May 9, 2024",
     description: "Hatch from a flower and navigate through the lovely and unsettling world of Animal Well, a pixelated labyrinth packed with secrets, puzzles, and atmospheric tension.",
-    videoUrl: "https://www.youtube.com/watch?v=0kG7yZ6P3xQ",
+    videoUrl: "https://www.youtube.com/watch?v=8EWbcc8tcsA",
     genres: ["Metroidvania", "Puzzle", "Pixel Art"],
     criticReviews: [
       { id: "c10", author: "Destructoid", score: 90, date: "May 9, 2024", content: "A hauntingly beautiful puzzle box of a game with non-linear ingenuity and mind-bending puzzle depths.", type: "critic" }
@@ -225,7 +225,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Bandai Namco Entertainment",
     releaseDate: "Jan 26, 2024",
     description: "Fist Meets Fate in Tekken 8. Powered by Unreal Engine 5, featuring the revolutionary Heat System and intense 3D fighting combat.",
-    videoUrl: "https://www.youtube.com/watch?v=2r1o_zO2rEE",
+    videoUrl: "https://www.youtube.com/watch?v=2hPuRQz6IlM",
     genres: ["Fighting", "3D", "Competitive"],
     criticReviews: [
       { id: "c11", author: "Push Square", score: 90, date: "Jan 25, 2024", content: "Tekken 8 is the absolute peak of 3D fighting games right now. The Heat System injects blistering aggression.", type: "critic" }
@@ -249,7 +249,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Konami",
     releaseDate: "Oct 8, 2024",
     description: "Having received a letter from his deceased wife, James heads to where they shared so many memories: Silent Hill. A psychological survival horror masterpiece remade.",
-    videoUrl: "https://www.youtube.com/watch?v=pyC_qiW_eGM",
+    videoUrl: "https://www.youtube.com/watch?v=CMvrMTmuJuA",
     genres: ["Survival Horror", "Psychological Horror", "Action"],
     criticReviews: [
       { id: "c12", author: "VGC", score: 90, date: "Oct 5, 2024", content: "Bloober Team has delivered a faithful, haunting, and terrifyingly atmospheric recreation of a classic.", type: "critic" }
@@ -273,7 +273,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Sony Interactive Entertainment",
     releaseDate: "Feb 8, 2024",
     description: "Join the Helldivers and fight for freedom with friends across a hostile galaxy in a fast, frantic, and ferocious third-person co-op shooter.",
-    videoUrl: "https://www.youtube.com/watch?v=l8bW0M0pE8c",
+    videoUrl: "https://www.youtube.com/watch?v=UC5EpJR0GBQ",
     genres: ["Co-op Shooter", "Third-Person", "Sci-Fi"],
     criticReviews: [
       { id: "c13", author: "GamesRadar+", score: 85, date: "Feb 14, 2024", content: "Hilarious, chaotic, and relentlessly entertaining co-op firepower against hordes of bugs and bots.", type: "critic" }
@@ -298,7 +298,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Sega",
     releaseDate: "Jan 26, 2024",
     description: "Two larger-than-life heroes brought together by the hand of fate: Ichiban Kasuga and Kazuma Kiryu. Live it up in Japan and explore all that Hawaii has to offer.",
-    videoUrl: "https://www.youtube.com/watch?v=eQ0pZqW-u9I",
+    videoUrl: "https://www.youtube.com/watch?v=dWXAxOKdQ6c",
     genres: ["JRPG", "Turn-Based", "Comedy/Crime"],
     criticReviews: [
       { id: "c14", author: "IGN", score: 90, date: "Jan 24, 2024", content: "Endlessly charming, filled with mini-games, and emotionally rich with both humor and tears.", type: "critic" }
@@ -323,7 +323,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Capcom",
     releaseDate: "Mar 22, 2024",
     description: "Dragon's Dogma 2 is a narrative driven action-RPG that challenges players to choose their own experience – from the appearance of their Arisen to their vocation and Pawns.",
-    videoUrl: "https://www.youtube.com/watch?v=7u203vP2kR4",
+    videoUrl: "https://www.youtube.com/watch?v=Td4Kek2gtYM",
     genres: ["Action RPG", "Open World", "Fantasy"],
     criticReviews: [
       { id: "c15", author: "Polygon", score: 90, date: "Mar 20, 2024", content: "An emergent gameplay triumph that treats player curiosity with respect, filled with unforgettable monsters.", type: "critic" }
@@ -348,7 +348,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Sega",
     releaseDate: "Jun 14, 2024",
     description: "Embark on this definitive version of the critically acclaimed Shin Megami Tensei V, massively expanded with a brand-new storyline featuring new locations and demons.",
-    videoUrl: "https://www.youtube.com/watch?v=rU0_8pZ_pT8",
+    videoUrl: "https://www.youtube.com/watch?v=b1zzA3WIkJE",
     genres: ["JRPG", "Turn-Based", "Post-Apocalyptic"],
     criticReviews: [
       { id: "c16", author: "Nintendo Life", score: 90, date: "Jun 13, 2024", content: "The Canon of Vengeance fixes previous story shortcomings while adding tremendous quality-of-life additions.", type: "critic" }
@@ -373,7 +373,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Focus Entertainment",
     releaseDate: "Sep 9, 2024",
     description: "Embody the superhuman skill and brutality of a Space Marine. Unleash deadly abilities and devastating weaponry to obliterate relentless Tyranid swarms.",
-    videoUrl: "https://www.youtube.com/watch?v=9_dF42jE7vM",
+    videoUrl: "https://www.youtube.com/watch?v=A_HljUo8Jjk",
     genres: ["Third-Person Shooter", "Action", "Co-op"],
     criticReviews: [
       { id: "c17", author: "PC Invasion", score: 85, date: "Sep 6, 2024", content: "Visceral, heavy, and delightfully gory. Saber Interactive perfectly nails the sheer scale of the 40K universe.", type: "critic" }
@@ -398,7 +398,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Ubisoft",
     releaseDate: "Jan 18, 2024",
     description: "Dash into a stylish and thrilling action-adventure platformer set in a mythological Persian world where the boundaries of time and space are yours to manipulate.",
-    videoUrl: "https://www.youtube.com/watch?v=w0vD4828f_U",
+    videoUrl: "https://www.youtube.com/watch?v=MmX7a_e65uU",
     genres: ["Metroidvania", "Action", "Platformer"],
     criticReviews: [
       { id: "c18", author: "GameSpot", score: 90, date: "Jan 16, 2024", content: "Razor-sharp platforming, inventive time powers, and revolutionary screenshot map pins make this a genre standout.", type: "critic" }
@@ -419,7 +419,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Nintendo",
     releaseDate: "Sep 26, 2024",
     description: "Save the kingdom of Hyrule – this time with the wisdom of Princess Zelda. Create 'echoes' of objects and monsters to solve intricate environmental puzzles.",
-    videoUrl: "https://www.youtube.com/watch?v=9jP8c3f_0Xw",
+    videoUrl: "https://www.youtube.com/watch?v=94RTrH2erPE",
     genres: ["Action-Adventure", "Puzzle", "Fantasy"],
     criticReviews: [
       { id: "c19", author: "IGN", score: 90, date: "Sep 25, 2024", content: "Zelda stepping into the starring role brings a fresh, highly playful puzzle sandbox that rewards experimentation.", type: "critic" }
@@ -440,7 +440,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "11 bit studios",
     releaseDate: "Sep 20, 2024",
     description: "Discover a city-survival game set 30 years after an apocalyptic blizzard ravaged Earth. Build your city at a new scale, balancing districts and political factions.",
-    videoUrl: "https://www.youtube.com/watch?v=0kF_3r7_pQQ",
+    videoUrl: "https://www.youtube.com/watch?v=PWlLOpqIYjA",
     genres: ["City Builder", "Survival", "Strategy"],
     criticReviews: [
       { id: "c20", author: "PC Gamer", score: 85, date: "Sep 17, 2024", content: "A grander and politically tenser evolution of the frostbitten society simulator, shifting focus to ideological conflict.", type: "critic" }
@@ -465,7 +465,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Devolver Digital",
     releaseDate: "Oct 15, 2024",
     description: "From the visionary team behind the acclaimed GRIS, Neva chronicles the story of Alba, a young woman bound to a curious wolf cub following a traumatic encounter.",
-    videoUrl: "https://www.youtube.com/watch?v=7u0_0pZ_xW8",
+    videoUrl: "https://www.youtube.com/watch?v=q7qpQuCNgQo",
     genres: ["Action-Adventure", "Artistic", "Platformer"],
     criticReviews: [
       { id: "c21", author: "Eurogamer", score: 90, date: "Oct 14, 2024", content: "An emotionally devastating, watercolor-drenched tour de force that builds upon Gris with fluid combat.", type: "critic" }
@@ -489,7 +489,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "GSC Game World",
     releaseDate: "Nov 20, 2024",
     description: "Discover the vast Chornobyl Exclusion Zone full of dangerous enemies, deadly anomalies, and powerful artifacts in this dark post-apocalyptic open-world FPS.",
-    videoUrl: "https://www.youtube.com/watch?v=8pA0_zW_eX4",
+    videoUrl: "https://www.youtube.com/watch?v=1dHmayETd4c",
     genres: ["FPS", "Survival Horror", "Open World"],
     criticReviews: [
       { id: "c22", author: "Windows Central", score: 80, date: "Nov 20, 2024", content: "Unrivaled atmosphere, unforgiving gunplay, and an authentically terrifying radioactive wilderness.", type: "critic" }
@@ -513,7 +513,7 @@ export const SEED_GAMES: SeedGameData[] = [
     publisher: "Bethesda Softworks",
     releaseDate: "Dec 9, 2024",
     description: "Uncover one of history’s greatest mysteries in Indiana Jones and the Great Circle, a first-person, single-player adventure set between the events of Raiders of the Lost Ark and The Last Crusade.",
-    videoUrl: "https://www.youtube.com/watch?v=kY0w_vQ9xT8",
+    videoUrl: "https://www.youtube.com/watch?v=sq97d1RkdRM",
     genres: ["Action-Adventure", "First-Person", "Cinematic"],
     criticReviews: [
       { id: "c23", author: "IGN", score: 90, date: "Dec 6, 2024", content: "MachineGames nails the cinematic spirit of Indiana Jones with smart puzzle-solving and tactile whip mechanics.", type: "critic" }

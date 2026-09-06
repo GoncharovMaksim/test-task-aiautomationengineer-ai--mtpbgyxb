@@ -64,10 +64,11 @@ export const GameDetailModal: React.FC<GameDetailModalProps> = ({
   };
 
   // Extract YouTube video ID if standard format
-  const getYouTubeEmbedUrl = (url: string) => {
+  const getYouTubeEmbedUrl = (url?: string) => {
+    if (!url) return null;
     try {
-      const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
-      return match ? `https://www.youtube-nocookie.com/embed/${match[1]}` : null;
+      const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=|shorts\/))([\w-]{11})/);
+      return match ? `https://www.youtube.com/embed/${match[1]}?rel=0&modestbranding=1` : null;
     } catch {
       return null;
     }
@@ -194,33 +195,46 @@ export const GameDetailModal: React.FC<GameDetailModalProps> = ({
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-xs uppercase tracking-wider text-zinc-400 font-mono flex items-center gap-1.5">
-                    <Film className="w-3.5 h-3.5 text-zinc-400" /> Official Trailer & Video
+                    <Film className="w-3.5 h-3.5 text-zinc-400" /> Official Trailer & Gameplay
                   </h3>
                   <a
                     href={game.videoUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-xs text-zinc-400 hover:text-zinc-200 flex items-center gap-1 font-mono"
+                    className="text-xs text-zinc-400 hover:text-zinc-200 flex items-center gap-1 font-mono transition-colors"
                   >
-                    Direct Link <ExternalLink className="w-3 h-3" />
+                    Watch on YouTube <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>
 
                 {trailerEmbed ? (
-                  <div className="aspect-video w-full rounded-xl overflow-hidden bg-black border border-zinc-800">
-                    <iframe
-                      src={trailerEmbed}
-                      title={`${game.title} trailer`}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="w-full h-full border-0"
-                    />
+                  <div className="space-y-2">
+                    <div className="aspect-video w-full rounded-xl overflow-hidden bg-black border border-zinc-800 shadow-inner">
+                      <iframe
+                        src={trailerEmbed}
+                        title={`${game.title} trailer`}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="w-full h-full border-0"
+                      />
+                    </div>
+                    <div className="flex items-center justify-between px-1 text-[11px] text-zinc-500 font-mono">
+                      <span>If video shows unavailable (YouTube ISP filter / region):</span>
+                      <a
+                        href={game.videoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-amber-400 hover:text-amber-300 underline inline-flex items-center gap-1"
+                      >
+                        Open directly <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </div>
                   </div>
                 ) : (
                   <div className="p-4 rounded-xl bg-zinc-950/60 border border-zinc-800 text-center text-xs text-zinc-400">
                     <p className="mb-2">Official gameplay trailer stream:</p>
                     <a
-                      href={game.videoUrl}
+                      href={game.videoUrl || `https://www.youtube.com/results?search_query=${encodeURIComponent(game.title + " trailer")}`}
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center gap-2 px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 rounded-lg text-xs font-mono transition-colors"
