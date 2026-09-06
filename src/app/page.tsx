@@ -8,6 +8,7 @@ import { MonitoringPanel } from "../components/MonitoringPanel";
 import { FilterBar } from "../components/FilterBar";
 import { GameCard } from "../components/GameCard";
 import { GameDetailModal } from "../components/GameDetailModal";
+import { Languages } from "lucide-react";
 import { LanguageProvider, useLanguage } from "../context/LanguageContext";
 
 function MainDashboard() {
@@ -139,33 +140,38 @@ function MainDashboard() {
             </span>
 
             {/* Language Switcher */}
-            <div className="flex items-center bg-zinc-900 border border-zinc-700/80 rounded-lg p-0.5 text-xs font-mono">
+            <div className="flex items-center gap-1 bg-zinc-900 border border-zinc-700/80 rounded-lg p-1 text-xs font-mono shadow-sm">
+              <Languages className="w-3.5 h-3.5 text-zinc-400 ml-1 mr-0.5" />
               <button
+                type="button"
                 onClick={() => setLanguage("ru")}
-                className={`px-2 py-1 rounded transition-colors ${
+                className={`px-2 py-0.5 rounded transition-colors ${
                   language === "ru"
                     ? "bg-zinc-100 text-zinc-950 font-bold shadow-sm"
                     : "text-zinc-400 hover:text-zinc-200"
                 }`}
                 title="Переключить интерфейс и описания на русский язык"
+                aria-label="Русский язык"
               >
                 RU
               </button>
               <button
+                type="button"
                 onClick={() => setLanguage("en")}
-                className={`px-2 py-1 rounded transition-colors ${
+                className={`px-2 py-0.5 rounded transition-colors ${
                   language === "en"
                     ? "bg-zinc-100 text-zinc-950 font-bold shadow-sm"
                     : "text-zinc-400 hover:text-zinc-200"
                 }`}
                 title="Switch interface and texts to English"
+                aria-label="English language"
               >
                 EN
               </button>
             </div>
 
             <a
-              href="https://github.com/GoncharovMaksim/test-task-aiautomationengineerинженерпоaiавтоматизации-mtpbgyxb"
+              href="https://github.com/GoncharovMaksim/test-task-aiautomationengineer-ai--mtpbgyxb"
               target="_blank"
               rel="noreferrer"
               className="text-zinc-400 hover:text-zinc-200 transition-colors"
