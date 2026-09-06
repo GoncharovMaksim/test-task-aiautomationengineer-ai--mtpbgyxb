@@ -4,6 +4,9 @@
 - Production URL: https://test-task-aiautomationengineer-mtpb.vercel.app
 - Alternative Alias: https://test-task-aiautomationengineer-mtpbgyxb-a2rxwdplk-max112.vercel.app
 
+## Repository
+- GitHub: https://github.com/GoncharovMaksim/test-task-aiautomationengineer-ai--mtpbgyxb
+
 ## Overview
 
 Automated data ingestion and AI analytics service for video game releases based on Metacritic. The system performs scheduled hourly crawling, parses game metadata and multi-platform review scores, derives distinct AI syntheses for critic and player sentiment, transcribes popular YouTube Let's Play commentary to produce gameplay verdicts, computes cross-game content similarities, and provides a real-time monitoring web dashboard with manual execution controls.
