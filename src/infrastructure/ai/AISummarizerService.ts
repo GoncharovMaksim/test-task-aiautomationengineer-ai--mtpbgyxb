@@ -21,6 +21,8 @@ export class AISummarizerService {
         consensus: `Initial ${type} impressions for ${gameTitle} are generally positive with minor polish concerns.`,
         sampleCount: 0,
         updatedAt: new Date().toISOString(),
+        provider: "heuristic",
+        model: "Deterministic NLP Heuristic",
       };
     }
 
@@ -97,6 +99,8 @@ Return ONLY valid JSON in this exact structure, without markdown backticks:
       consensus: parsed.consensus || "Overall balanced reception.",
       sampleCount: reviewsText.split("\n\n").length,
       updatedAt: new Date().toISOString(),
+      provider: "gemini",
+      model: "Google Gemini 2.5 Flash",
     };
   }
 
@@ -139,6 +143,8 @@ Output valid JSON only:
       consensus: parsed.consensus || "Positive player feedback.",
       sampleCount: reviewsText.split("\n\n").length,
       updatedAt: new Date().toISOString(),
+      provider: "groq",
+      model: "Groq Llama 3.1 8B",
     };
   }
 
@@ -191,6 +197,8 @@ Output valid JSON only:
       consensus,
       sampleCount: reviews.length,
       updatedAt: new Date().toISOString(),
+      provider: "heuristic",
+      model: "Deterministic NLP Heuristic",
     };
   }
 }

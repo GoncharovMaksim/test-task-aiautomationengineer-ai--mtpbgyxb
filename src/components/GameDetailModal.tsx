@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Game } from "../domain/entities/Game";
 import { COVER_IMAGE_MAP } from "../infrastructure/seed/seedData";
 import { ScoreBadge } from "./ScoreBadge";
@@ -17,6 +17,7 @@ import {
   Building2,
   Film,
   Video,
+  CheckCircle2,
 } from "lucide-react";
 
 interface GameDetailModalProps {
@@ -24,6 +25,7 @@ interface GameDetailModalProps {
   similarGames: Game[];
   onClose: () => void;
   onSelectGame: (game: Game) => void;
+  onGameUpdated?: (game: Game) => void;
 }
 
 export const GameDetailModal: React.FC<GameDetailModalProps> = ({
@@ -31,8 +33,35 @@ export const GameDetailModal: React.FC<GameDetailModalProps> = ({
   similarGames,
   onClose,
   onSelectGame,
+  onGameUpdated,
 }) => {
+  const [isRegenerating, setIsRegenerating] = useState(false);
+  const [regenerateNotice, setRegenerateNotice] = useState<string | null>(null);
+
   if (!game) return null;
+
+  const handleRegenerateAI = async () => {
+    if (!game || isRegenerating) return;
+    setIsRegenerating(true);
+    setRegenerateNotice(null);
+    try {
+      const res = await fetch(`/api/games/${game.id}/regenerate-ai`, {
+        method: "POST",
+      });
+      if (res.ok) {
+        const data = await res.json();
+        if (data.game) {
+          onGameUpdated?.(data.game);
+          setRegenerateNotice("Successfully regenerated with Google Gemini 2.5 Flash!");
+          setTimeout(() => setRegenerateNotice(null), 5000);
+        }
+      }
+    } catch (err) {
+      console.error("Failed to regenerate AI:", err);
+    } finally {
+      setIsRegenerating(false);
+    }
+  };
 
   // Extract YouTube video ID if standard format
   const getYouTubeEmbedUrl = (url: string) => {
@@ -206,12 +235,29 @@ export const GameDetailModal: React.FC<GameDetailModalProps> = ({
 
           {/* AI Review Summaries Section (Separate Critic & User Summaries) */}
           <div className="pt-2 border-t border-zinc-800">
-            <div className="flex items-center gap-2 mb-4">
-              <Bot className="w-4 h-4 text-zinc-300" />
-              <h3 className="text-sm font-semibold text-zinc-100">
-                AI Review Summaries (Critic vs. User Breakdown)
-              </h3>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+              <div className="flex items-center gap-2">
+                <Bot className="w-4 h-4 text-zinc-300" />
+                <h3 className="text-sm font-semibold text-zinc-100">
+                  AI Review Summaries (Critic vs. User Breakdown)
+                </h3>
+              </div>
+              <button
+                onClick={handleRegenerateAI}
+                disabled={isRegenerating}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-200 border border-zinc-700 transition-colors disabled:opacity-50"
+              >
+                <Sparkles className={`w-3.5 h-3.5 text-amber-400 ${isRegenerating ? "animate-spin" : ""}`} />
+                {isRegenerating ? "Synthesizing with Gemini..." : "Regenerate with Gemini 2.5 Flash"}
+              </button>
             </div>
+
+            {regenerateNotice && (
+              <div className="mb-4 p-2.5 rounded-lg bg-emerald-950/60 border border-emerald-800/80 text-emerald-300 text-xs font-mono flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>{regenerateNotice}</span>
+              </div>
+            )}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Critic Reviews Summary */}
@@ -220,9 +266,15 @@ export const GameDetailModal: React.FC<GameDetailModalProps> = ({
                   <span className="text-xs font-semibold text-zinc-200 uppercase tracking-wider font-mono">
                     Critic Reviews Summary
                   </span>
-                  <span className="text-[10px] font-mono text-zinc-500">
-                    {game.criticReviewSummary?.sampleCount ?? 0} reviews analyzed
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="inline-flex items-center gap-1 text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-zinc-300">
+                      <Sparkles className="w-2.5 h-2.5 text-amber-400" />
+                      {game.criticReviewSummary?.model || "Google Gemini 2.5 Flash"}
+                    </span>
+                    <span className="text-[10px] font-mono text-zinc-500">
+                      {game.criticReviewSummary?.sampleCount ?? 0} reviews
+                    </span>
+                  </div>
                 </div>
 
                 {game.criticReviewSummary ? (
@@ -266,9 +318,15 @@ export const GameDetailModal: React.FC<GameDetailModalProps> = ({
                   <span className="text-xs font-semibold text-zinc-200 uppercase tracking-wider font-mono">
                     User Reviews Summary
                   </span>
-                  <span className="text-[10px] font-mono text-zinc-500">
-                    {game.userReviewSummary?.sampleCount ?? 0} reviews analyzed
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="inline-flex items-center gap-1 text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-zinc-300">
+                      <Sparkles className="w-2.5 h-2.5 text-amber-400" />
+                      {game.userReviewSummary?.model || "Google Gemini 2.5 Flash"}
+                    </span>
+                    <span className="text-[10px] font-mono text-zinc-500">
+                      {game.userReviewSummary?.sampleCount ?? 0} reviews
+                    </span>
+                  </div>
                 </div>
 
                 {game.userReviewSummary ? (
@@ -317,11 +375,17 @@ export const GameDetailModal: React.FC<GameDetailModalProps> = ({
                   YouTube Let's Play & Streamer Commentary Analysis
                 </h3>
               </div>
-              {game.letsPlayAnalysis && (
-                <span className="text-[11px] font-mono text-zinc-500">
-                  {game.letsPlayAnalysis.viewCount} &bull; {game.letsPlayAnalysis.channelName}
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center gap-1 text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-zinc-300">
+                  <Sparkles className="w-2.5 h-2.5 text-amber-400" />
+                  {game.letsPlayAnalysis?.model || "Google Gemini 2.5 Flash"}
                 </span>
-              )}
+                {game.letsPlayAnalysis && (
+                  <span className="text-[11px] font-mono text-zinc-500">
+                    {game.letsPlayAnalysis.viewCount} &bull; {game.letsPlayAnalysis.channelName}
+                  </span>
+                )}
+              </div>
             </div>
 
             {game.letsPlayAnalysis ? (

@@ -214,6 +214,10 @@ export default function HomePage() {
         similarGames={similarGames}
         onClose={() => setSelectedGame(null)}
         onSelectGame={handleOpenGame}
+        onGameUpdated={(updatedGame) => {
+          setSelectedGame(updatedGame);
+          setGames((prev) => prev.map((g) => (g.id === updatedGame.id ? updatedGame : g)));
+        }}
       />
     </main>
   );

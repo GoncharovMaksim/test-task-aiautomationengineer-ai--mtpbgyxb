@@ -10,6 +10,8 @@ export interface ReviewSummary {
   consensus: string;
   sampleCount: number;
   updatedAt: string;
+  provider?: string;
+  model?: string;
 }
 
 export interface LetsPlayAnalysis {
@@ -23,6 +25,8 @@ export interface LetsPlayAnalysis {
   cons: string[];
   bloggerVerdict: string;
   analyzedAt: string;
+  provider?: string;
+  model?: string;
 }
 
 export interface RawReview {

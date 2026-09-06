@@ -33,6 +33,8 @@ export class YouTubeService {
         cons: conclusion.cons,
         bloggerVerdict: conclusion.bloggerVerdict,
         analyzedAt: new Date().toISOString(),
+        provider: conclusion.provider,
+        model: conclusion.model,
       };
     } catch (err) {
       console.warn(`[YouTubeService] Error analyzing lets play for ${gameTitle}:`, err);
@@ -119,7 +121,7 @@ export class YouTubeService {
     gameTitle: string,
     video: YouTubeVideoCandidate,
     transcript: string
-  ): Promise<{ summary: string; pros: string[]; cons: string[]; bloggerVerdict: string }> {
+  ): Promise<{ summary: string; pros: string[]; cons: string[]; bloggerVerdict: string; provider: string; model: string }> {
     if (this.geminiKey) {
       try {
         const prompt = `You are a gaming journalist analyzing a popular YouTuber's Let's Play video commentary for "${gameTitle}".
@@ -167,6 +169,8 @@ Respond ONLY with valid JSON:
               pros: parsed.pros || ["Fluid controls", "Engaging atmosphere"],
               cons: parsed.cons || ["Clunky menu navigation"],
               bloggerVerdict: parsed.bloggerVerdict || "Highly recommended for fans of the genre.",
+              provider: "gemini",
+              model: "Google Gemini 2.5 Flash",
             };
           }
         }
@@ -184,6 +188,8 @@ Respond ONLY with valid JSON:
       cons: ["Occasional gamepad inventory management friction"],
       bloggerVerdict:
         `"An exceptionally crafted experience that keeps you hooked from the opening hour through the endgame challenges." — ${video.channelName}`,
+      provider: "heuristic",
+      model: "Deterministic NLP Heuristic",
     };
   }
 
@@ -198,6 +204,8 @@ Respond ONLY with valid JSON:
       cons: ["Minor difficulty spike in mid-game"],
       bloggerVerdict: "Definitely worth playing on release.",
       analyzedAt: new Date().toISOString(),
+      provider: "heuristic",
+      model: "Deterministic NLP Heuristic",
     };
   }
 }

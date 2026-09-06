@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { WorkerStatus } from "../domain/entities/WorkerStatus";
 import { CrawlLog } from "../domain/entities/CrawlLog";
-import { Play, Activity, CheckCircle2, AlertCircle, RefreshCw, Terminal, Clock, Database, Layers } from "lucide-react";
+import { Play, Activity, CheckCircle2, AlertCircle, RefreshCw, Terminal, Clock, Database, Layers, Sparkles, X } from "lucide-react";
 
 interface MonitoringPanelProps {
   status: WorkerStatus | null;
@@ -20,6 +20,33 @@ export const MonitoringPanel: React.FC<MonitoringPanelProps> = ({
 }) => {
   const [selectedSource, setSelectedSource] = useState<"new-releases" | "browse-all-new">("new-releases");
   const [isExpanded, setIsExpanded] = useState(true);
+  const [isTestingAI, setIsTestingAI] = useState(false);
+  const [aiTestResult, setAiTestResult] = useState<{
+    success: boolean;
+    status: string;
+    latencyMs?: number;
+    model?: string;
+    aiResponse?: any;
+    error?: string;
+    apiKeyMasked?: string;
+  } | null>(null);
+
+  const handleTestAI = async () => {
+    setIsTestingAI(true);
+    try {
+      const res = await fetch("/api/ai/test");
+      const data = await res.json();
+      setAiTestResult(data);
+    } catch (err: any) {
+      setAiTestResult({
+        success: false,
+        status: "network_error",
+        error: err.message,
+      });
+    } finally {
+      setIsTestingAI(false);
+    }
+  };
 
   const isRunning =
     status?.state !== "idle" && status?.state !== "completed" && status?.state !== "error";
@@ -73,7 +100,17 @@ export const MonitoringPanel: React.FC<MonitoringPanelProps> = ({
         </div>
 
         {/* Action button */}
-        <div className="flex items-center gap-2.5">
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            onClick={handleTestAI}
+            disabled={isTestingAI}
+            title="Ping Gemini 2.5 Flash API to verify live generation"
+            className="inline-flex items-center gap-1.5 text-xs font-mono px-3 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-200 border border-zinc-700 transition-colors disabled:opacity-50"
+          >
+            <Sparkles className={`w-3.5 h-3.5 text-amber-400 ${isTestingAI ? "animate-spin" : ""}`} />
+            {isTestingAI ? "Testing AI..." : "Test Gemini 2.5 Flash"}
+          </button>
+
           <select
             value={selectedSource}
             onChange={(e) => setSelectedSource(e.target.value as any)}
@@ -99,6 +136,50 @@ export const MonitoringPanel: React.FC<MonitoringPanelProps> = ({
           </button>
         </div>
       </div>
+
+      {/* AI Diagnostic Result Banner */}
+      {aiTestResult && (
+        <div className={`mt-3 p-3 rounded-xl border text-xs font-mono ${
+          aiTestResult.success
+            ? "bg-emerald-950/40 border-emerald-800/80 text-emerald-200"
+            : "bg-rose-950/40 border-rose-800/80 text-rose-200"
+        }`}>
+          <div className="flex items-center justify-between pb-1.5 border-b border-zinc-800/60 mb-2">
+            <div className="flex items-center gap-2">
+              <Sparkles className="w-4 h-4 text-amber-400" />
+              <span className="font-semibold">AI Generation Diagnostics: {aiTestResult.model || "Google Gemini 2.5 Flash"}</span>
+            </div>
+            <div className="flex items-center gap-3">
+              {aiTestResult.latencyMs !== undefined && (
+                <span className="text-[11px] opacity-80">Latency: {aiTestResult.latencyMs}ms</span>
+              )}
+              <button
+                onClick={() => setAiTestResult(null)}
+                className="text-zinc-400 hover:text-zinc-100 p-0.5"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+          <div className="space-y-1 text-[11px]">
+            <div>Status: <span className="font-semibold uppercase">{aiTestResult.status}</span></div>
+            {aiTestResult.apiKeyMasked && (
+              <div>API Key: <span>{aiTestResult.apiKeyMasked} (Live Vercel Environment)</span></div>
+            )}
+            {aiTestResult.aiResponse && (
+              <div className="mt-2 p-2.5 rounded-lg bg-zinc-950/70 border border-zinc-800/80 text-zinc-300">
+                <span className="text-zinc-500 block mb-1">Live Gemini Response:</span>
+                &ldquo;{typeof aiTestResult.aiResponse === "object"
+                  ? (aiTestResult.aiResponse.testVerdict || JSON.stringify(aiTestResult.aiResponse))
+                  : aiTestResult.aiResponse}&rdquo;
+              </div>
+            )}
+            {aiTestResult.error && (
+              <div className="mt-1 text-rose-300">Error: {aiTestResult.error}</div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Real-time metrics grid */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 py-4">
