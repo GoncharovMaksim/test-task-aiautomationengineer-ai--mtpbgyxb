@@ -1,12 +1,24 @@
+"use client";
+
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 interface ScoreBadgeProps {
   score: number | null;
   type: "metascore" | "userscore";
   size?: "sm" | "md" | "lg";
+  customLabel?: string;
 }
 
-export const ScoreBadge: React.FC<ScoreBadgeProps> = ({ score, type, size = "md" }) => {
+export const ScoreBadge: React.FC<ScoreBadgeProps> = ({ score, type, size = "md", customLabel }) => {
+  let lang = "ru";
+  try {
+    const langContext = useLanguage();
+    lang = langContext.language;
+  } catch {
+    // If rendered outside provider
+  }
+
   if (score === null || score === undefined) {
     return (
       <span className="inline-flex items-center px-2 py-0.5 text-xs font-mono text-zinc-500 bg-zinc-900 border border-zinc-800 rounded">
@@ -33,6 +45,13 @@ export const ScoreBadge: React.FC<ScoreBadgeProps> = ({ score, type, size = "md"
 
   const formattedScore = type === "userscore" ? score.toFixed(1) : Math.round(score);
 
+  const defaultLabel =
+    type === "metascore"
+      ? "Metascore"
+      : lang === "ru"
+      ? "Игроки"
+      : "Users";
+
   return (
     <div className="inline-flex items-center gap-1.5">
       <span
@@ -41,7 +60,7 @@ export const ScoreBadge: React.FC<ScoreBadgeProps> = ({ score, type, size = "md"
         {formattedScore}
       </span>
       <span className="text-[10px] uppercase tracking-wider text-zinc-400 font-medium">
-        {type === "metascore" ? "Metascore" : "Users"}
+        {customLabel || defaultLabel}
       </span>
     </div>
   );

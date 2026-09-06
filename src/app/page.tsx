@@ -8,9 +8,10 @@ import { MonitoringPanel } from "../components/MonitoringPanel";
 import { FilterBar } from "../components/FilterBar";
 import { GameCard } from "../components/GameCard";
 import { GameDetailModal } from "../components/GameDetailModal";
-import { Shield, Sparkles, Terminal, RefreshCw } from "lucide-react";
+import { LanguageProvider, useLanguage } from "../context/LanguageContext";
 
-export default function HomePage() {
+function MainDashboard() {
+  const { t, language, setLanguage } = useLanguage();
   const [games, setGames] = useState<Game[]>([]);
   const [totalGames, setTotalGames] = useState(0);
   const [isLoadingGames, setIsLoadingGames] = useState(true);
@@ -125,24 +126,51 @@ export default function HomePage() {
               MC
             </div>
             <div className="flex items-baseline gap-2">
-              <span className="text-sm font-semibold text-zinc-100">Metacritic AI Pipeline</span>
+              <span className="text-sm font-semibold text-zinc-100">{t("appTitle")}</span>
               <span className="text-[11px] font-mono text-zinc-400 hidden sm:inline">
-                v1.0 &bull; Skytec Games Test Task
+                {t("appSubtitle")}
               </span>
             </div>
           </div>
 
           <div className="flex items-center gap-3 text-xs font-mono text-zinc-400">
-            <span className="hidden sm:inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800 text-zinc-400">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> Hourly Worker Active
+            <span className="hidden md:inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800 text-zinc-400">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> {t("workerActive")}
             </span>
+
+            {/* Language Switcher */}
+            <div className="flex items-center bg-zinc-900 border border-zinc-700/80 rounded-lg p-0.5 text-xs font-mono">
+              <button
+                onClick={() => setLanguage("ru")}
+                className={`px-2 py-1 rounded transition-colors ${
+                  language === "ru"
+                    ? "bg-zinc-100 text-zinc-950 font-bold shadow-sm"
+                    : "text-zinc-400 hover:text-zinc-200"
+                }`}
+                title="Переключить интерфейс и описания на русский язык"
+              >
+                RU
+              </button>
+              <button
+                onClick={() => setLanguage("en")}
+                className={`px-2 py-1 rounded transition-colors ${
+                  language === "en"
+                    ? "bg-zinc-100 text-zinc-950 font-bold shadow-sm"
+                    : "text-zinc-400 hover:text-zinc-200"
+                }`}
+                title="Switch interface and texts to English"
+              >
+                EN
+              </button>
+            </div>
+
             <a
               href="https://github.com/GoncharovMaksim/test-task-aiautomationengineerинженерпоaiавтоматизации-mtpbgyxb"
               target="_blank"
               rel="noreferrer"
               className="text-zinc-400 hover:text-zinc-200 transition-colors"
             >
-              GitHub
+              {t("githubLink")}
             </a>
           </div>
         </div>
@@ -150,7 +178,7 @@ export default function HomePage() {
 
       {/* Main Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full flex-1">
-        {/* Real-time Worker Monitoring Dashboard (Дополнительная часть 2) */}
+        {/* Real-time Worker Monitoring Dashboard */}
         <MonitoringPanel
           status={workerStatus}
           logs={logs}
@@ -183,7 +211,7 @@ export default function HomePage() {
           </div>
         ) : games.length === 0 ? (
           <div className="text-center py-16 bg-zinc-900/30 border border-zinc-800 rounded-xl">
-            <p className="text-sm text-zinc-400">No games found matching your current filter criteria.</p>
+            <p className="text-sm text-zinc-400">{t("noGamesFound")}</p>
             <button
               onClick={() => {
                 setSearch("");
@@ -191,7 +219,7 @@ export default function HomePage() {
               }}
               className="mt-3 text-xs text-zinc-300 underline font-mono hover:text-white"
             >
-              Reset filters
+              {t("resetFilters")}
             </button>
           </div>
         ) : (
@@ -205,10 +233,10 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="border-t border-zinc-800/80 py-6 mt-12 text-center text-xs text-zinc-400 font-mono">
-        Metacritic AI Automation Service &bull; Production Architecture &bull; Clean Architecture &bull; TypeScript & Next.js
+        {t("footerText")}
       </footer>
 
-      {/* Modal View for Game Detail (Full info, AI reviews, YouTube Let's Play, Similar Games) */}
+      {/* Modal View for Game Detail */}
       <GameDetailModal
         game={selectedGame}
         similarGames={similarGames}
@@ -220,5 +248,13 @@ export default function HomePage() {
         }}
       />
     </main>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <LanguageProvider>
+      <MainDashboard />
+    </LanguageProvider>
   );
 }

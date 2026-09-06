@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
 import { Game } from "../domain/entities/Game";
 import { COVER_IMAGE_MAP } from "../infrastructure/seed/seedData";
 import { ScoreBadge } from "./ScoreBadge";
 import { PlatformTag } from "./PlatformTag";
-import { Video, Bot, PlayCircle } from "lucide-react";
+import { Bot, PlayCircle } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 interface GameCardProps {
   game: Game;
@@ -11,6 +14,8 @@ interface GameCardProps {
 }
 
 export const GameCard: React.FC<GameCardProps> = ({ game, onClick }) => {
+  const { t, localize } = useLanguage();
+  const localizedGame = localize(game);
   const coverSrc = COVER_IMAGE_MAP[game.slug] || game.coverImage;
 
   return (
@@ -23,7 +28,7 @@ export const GameCard: React.FC<GameCardProps> = ({ game, onClick }) => {
         <div className="relative aspect-[16/9] w-full bg-zinc-950 overflow-hidden border-b border-zinc-800/80">
           <img
             src={coverSrc}
-            alt={game.title}
+            alt={localizedGame.title}
             loading="lazy"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90 group-hover:opacity-100"
             onError={(e) => {
@@ -40,32 +45,32 @@ export const GameCard: React.FC<GameCardProps> = ({ game, onClick }) => {
 
           {/* Top badges */}
           <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5">
-            {game.letsPlayAnalysis && (
+            {localizedGame.letsPlayAnalysis && (
               <span
-                title="YouTube Let's Play Transcribed & Analyzed"
+                title="YouTube Let's Play"
                 className="bg-zinc-950/80 backdrop-blur border border-zinc-800 text-zinc-300 text-[10px] px-1.5 py-0.5 rounded flex items-center gap-1"
               >
                 <PlayCircle className="w-3 h-3 text-red-400" />
-                Let's Play
+                {t("letsPlayBadge")}
               </span>
             )}
-            {game.criticReviewSummary && (
+            {localizedGame.criticReviewSummary && (
               <span
-                title="AI Review Synthesis Available"
+                title="AI Summary"
                 className="bg-zinc-950/80 backdrop-blur border border-zinc-800 text-zinc-300 text-[10px] px-1.5 py-0.5 rounded flex items-center gap-1"
               >
                 <Bot className="w-3 h-3 text-zinc-300" />
-                AI Summary
+                {t("aiSummaryBadge")}
               </span>
             )}
           </div>
 
           <div className="absolute bottom-2.5 left-2.5 right-2.5 flex items-end justify-between">
             <span className="text-[11px] font-mono text-zinc-400 truncate drop-shadow-sm">
-              {game.developer}
+              {localizedGame.developer}
             </span>
             <span className="text-[11px] font-mono text-zinc-500 whitespace-nowrap">
-              {game.releaseDate}
+              {localizedGame.releaseDate}
             </span>
           </div>
         </div>
@@ -74,21 +79,21 @@ export const GameCard: React.FC<GameCardProps> = ({ game, onClick }) => {
         <div className="p-4 space-y-3">
           <div>
             <h3 className="text-sm font-semibold text-zinc-100 group-hover:text-white line-clamp-1">
-              {game.title}
+              {localizedGame.title}
             </h3>
             <p className="text-xs text-zinc-400 line-clamp-2 mt-1 leading-relaxed">
-              {game.description}
+              {localizedGame.description}
             </p>
           </div>
 
           {/* Platforms */}
           <div className="flex flex-wrap gap-1">
-            {game.platforms.slice(0, 3).map((p) => (
+            {localizedGame.platforms.slice(0, 3).map((p) => (
               <PlatformTag key={p.platform} platform={p.platform} />
             ))}
-            {game.platforms.length > 3 && (
+            {localizedGame.platforms.length > 3 && (
               <span className="text-[10px] font-mono text-zinc-500 self-center">
-                +{game.platforms.length - 3}
+                +{localizedGame.platforms.length - 3}
               </span>
             )}
           </div>
@@ -98,11 +103,11 @@ export const GameCard: React.FC<GameCardProps> = ({ game, onClick }) => {
       {/* Footer Scores */}
       <div className="px-4 py-3 bg-zinc-950/40 border-t border-zinc-800/60 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <ScoreBadge score={game.metascore} type="metascore" size="sm" />
-          <ScoreBadge score={game.userscore} type="userscore" size="sm" />
+          <ScoreBadge score={localizedGame.metascore} type="metascore" size="sm" />
+          <ScoreBadge score={localizedGame.userscore} type="userscore" size="sm" />
         </div>
         <span className="text-xs text-zinc-400 group-hover:text-zinc-200 transition-colors">
-          View details &rarr;
+          {t("viewDetails")}
         </span>
       </div>
     </div>
