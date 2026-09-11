@@ -1,5 +1,18 @@
 import { RawReview, ReviewSummary } from "../../domain/entities/Game";
 
+export function cleanAndParseJson<T>(raw: string): T {
+  let cleaned = raw.trim();
+  if (cleaned.startsWith("```")) {
+    cleaned = cleaned.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "").trim();
+  }
+  const firstBrace = cleaned.indexOf("{");
+  const lastBrace = cleaned.lastIndexOf("}");
+  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
+    cleaned = cleaned.slice(firstBrace, lastBrace + 1);
+  }
+  return JSON.parse(cleaned) as T;
+}
+
 export class AISummarizerService {
   private geminiKey?: string;
   private groqKey?: string;
@@ -57,21 +70,15 @@ export class AISummarizerService {
     reviewsText: string,
     type: "critic" | "user"
   ): Promise<ReviewSummary | null> {
-    const prompt = `You are a professional video game analyst. Analyze the following ${type} reviews for "${gameTitle}".
+    const prompt = `You are an expert video game analyst. Conduct a thorough sentiment and gameplay review analysis of the following ${type} reviews for "${gameTitle}".
+
 Extract:
-1. Liked: 2 to 4 concise bullet points of what players/critics genuinely like.
-2. Disliked: 2 to 4 concise bullet points of what they criticize or dislike.
-3. Consensus: A balanced 2-3 sentence summary verdict.
+1. "liked": Array of 2 to 4 concise, specific bullet points describing key gameplay mechanics, audio-visual design, or features praised by ${type}s.
+2. "disliked": Array of 2 to 4 concise, specific bullet points describing bugs, pacing, balance, or shortcomings criticized.
+3. "consensus": A comprehensive 2-3 sentence objective verdict synthesizing the overall reception.
 
-Reviews:
-${reviewsText}
-
-Return ONLY valid JSON in this exact structure, without markdown backticks:
-{
-  "liked": ["...", "..."],
-  "disliked": ["...", "..."],
-  "consensus": "..."
-}`;
+Reviews to analyze:
+${reviewsText}`;
 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${this.geminiKey}`;
     const res = await fetch(url, {
@@ -82,6 +89,26 @@ Return ONLY valid JSON in this exact structure, without markdown backticks:
         generationConfig: {
           temperature: 0.2,
           responseMimeType: "application/json",
+          responseSchema: {
+            type: "object",
+            properties: {
+              liked: {
+                type: "array",
+                items: { type: "string" },
+                description: "Aspects praised by reviewers",
+              },
+              disliked: {
+                type: "array",
+                items: { type: "string" },
+                description: "Aspects criticized by reviewers",
+              },
+              consensus: {
+                type: "string",
+                description: "2-3 sentence balanced consensus",
+              },
+            },
+            required: ["liked", "disliked", "consensus"],
+          },
         },
       }),
       signal: AbortSignal.timeout(12000),
@@ -92,10 +119,10 @@ Return ONLY valid JSON in this exact structure, without markdown backticks:
     const rawText = json.candidates?.[0]?.content?.parts?.[0]?.text;
     if (!rawText) return null;
 
-    const parsed = JSON.parse(rawText.trim());
+    const parsed = cleanAndParseJson<{ liked?: string[]; disliked?: string[]; consensus?: string }>(rawText);
     return {
-      liked: Array.isArray(parsed.liked) ? parsed.liked : ["Engaging gameplay"],
-      disliked: Array.isArray(parsed.disliked) ? parsed.disliked : ["Pacing issues"],
+      liked: Array.isArray(parsed.liked) && parsed.liked.length > 0 ? parsed.liked : ["Engaging gameplay design"],
+      disliked: Array.isArray(parsed.disliked) && parsed.disliked.length > 0 ? parsed.disliked : ["Minor polish issues"],
       consensus: parsed.consensus || "Overall balanced reception.",
       sampleCount: reviewsText.split("\n\n").length,
       updatedAt: new Date().toISOString(),
@@ -109,10 +136,6 @@ Return ONLY valid JSON in this exact structure, without markdown backticks:
     reviewsText: string,
     type: "critic" | "user"
   ): Promise<ReviewSummary | null> {
-    const prompt = `Analyze these ${type} reviews for "${gameTitle}".
-Output valid JSON only:
-{"liked": ["points what they liked"], "disliked": ["points what they disliked"], "consensus": "2 sentence consensus"}`;
-
     const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -122,8 +145,15 @@ Output valid JSON only:
       body: JSON.stringify({
         model: "llama-3.1-8b-instant",
         messages: [
-          { role: "system", content: "You are a concise video game analyst. Respond in valid JSON." },
-          { role: "user", content: `${prompt}\n\nReviews:\n${reviewsText}` },
+          {
+            role: "system",
+            content:
+              "You are a professional video game analyst. Output valid JSON with keys 'liked' (array of strings), 'disliked' (array of strings), and 'consensus' (string). Never include markdown code fences.",
+          },
+          {
+            role: "user",
+            content: `Analyze these ${type} reviews for "${gameTitle}" and extract liked aspects, disliked aspects, and consensus:\n\n${reviewsText}`,
+          },
         ],
         response_format: { type: "json_object" },
         temperature: 0.2,
@@ -136,10 +166,10 @@ Output valid JSON only:
     const content = json.choices?.[0]?.message?.content;
     if (!content) return null;
 
-    const parsed = JSON.parse(content);
+    const parsed = cleanAndParseJson<{ liked?: string[]; disliked?: string[]; consensus?: string }>(content);
     return {
-      liked: Array.isArray(parsed.liked) ? parsed.liked : ["Strong mechanics"],
-      disliked: Array.isArray(parsed.disliked) ? parsed.disliked : ["Minor bugs"],
+      liked: Array.isArray(parsed.liked) && parsed.liked.length > 0 ? parsed.liked : ["Strong mechanics"],
+      disliked: Array.isArray(parsed.disliked) && parsed.disliked.length > 0 ? parsed.disliked : ["Minor bugs"],
       consensus: parsed.consensus || "Positive player feedback.",
       sampleCount: reviewsText.split("\n\n").length,
       updatedAt: new Date().toISOString(),
